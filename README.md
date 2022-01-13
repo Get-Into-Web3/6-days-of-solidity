@@ -74,6 +74,14 @@ This generally means that the balance can be found by entering the address and b
 
 3. require keyword helps to verify certain conditions that must be true before running a function.
 
+4. In order to avoid writing long smart contracts, we can use inheritance. It lets us split our code logic across multiple contracts to organize the code.
+Let us say Car contract inherits vehicle. We can represent it using the following statement:
+```
+contract Car is vehicle {
+}
+```
+
+5. import keyword helps you to import one file into another. 
 ### Day 3 Learnings
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
