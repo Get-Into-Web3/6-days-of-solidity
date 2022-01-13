@@ -89,6 +89,12 @@ State variables are storage by default and variables declared inside functions a
 
 7. In **Internal visibility**, t's also accessible to contracts that inherit from this contract.
 In **external visibility**, functions can only be called outside the contract. 
+
+8. In order for one contract to talk to another contract on the blockchain that we don't own, we need to define an interface.
+In an interface, function definition is not there. 
+
+9. Solidity can return multiple values.
+
 ### Day 3 Learnings
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
