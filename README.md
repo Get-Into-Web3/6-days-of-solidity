@@ -63,7 +63,12 @@ If we do not access any data in the app, it is a pure function.
 
 ### Day 2 Learnings
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+1. Mappings are a key-value store for storing and looking up data. 
+It is defined like this:
+```
+mapping (address => uint) public balance;
+```
+This generally means that the balance can be found by entering the address and balance will be returned which is a uint.
 
 ### Day 3 Learnings
 
