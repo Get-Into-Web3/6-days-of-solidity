@@ -70,6 +70,10 @@ mapping (address => uint) public balance;
 ```
 This generally means that the balance can be found by entering the address and balance will be returned which is a uint.
 
+2. msg.sender is a global variable which refers to the address of the person who called the cuurent function.
+
+3. require keyword helps to verify certain conditions that must be true before running a function.
+
 ### Day 3 Learnings
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
