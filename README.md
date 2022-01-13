@@ -82,6 +82,13 @@ contract Car is vehicle {
 ```
 
 5. import keyword helps you to import one file into another. 
+
+6. In Solidity, there are two locations you can store variables — in storage and in memory.
+Storage refers to variables stored permanently on the blockchain. Memory variables are temporary, and are erased between external function calls to your contract. 
+State variables are storage by default and variables declared inside functions are memory. 
+
+7. In **Internal visibility**, t's also accessible to contracts that inherit from this contract.
+In **external visibility**, functions can only be called outside the contract. 
 ### Day 3 Learnings
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
