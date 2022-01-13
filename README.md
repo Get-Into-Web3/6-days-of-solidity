@@ -94,6 +94,7 @@ In **external visibility**, functions can only be called outside the contract.
 In an interface, function definition is not there. 
 
 9. Solidity can return multiple values.
+10. We can also write if statements in Solidity that tests a condition and then executes code if the condition passes.
 
 ### Day 3 Learnings
 
