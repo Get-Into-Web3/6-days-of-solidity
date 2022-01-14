@@ -2,13 +2,22 @@
 
 ### Day 1 Making the Zombie Factory
 
-In NutShell it's all about the basics of whole solidity programming language and I will bet you will get excited to learn more in this Course.
+In NutShell it's all about the basics of whole solidity programming language and I will bet you will get more excited to learn more in this Course.
     
-    # LESSON OVERVIEW:
-        In Starting you will get to know what is our main mission and at the end what you want to achieve.
-    CHAPTER 1
-        Contracts  Version Pragma
-    CHAPTER 2
+    LESSON OVERVIEW:
+    
+    In Starting you will get to know that what is our main mission and at the end what you want to achieve. Basically we are going to make Zombiefactory in which zombie get         created so we will be going to implement such feature so that user can easily make their own choice of Zombie.
+    
+    CHAPTER 1: Contracts
+    
+    Contracts is nothing just the piece of code which get migrated into blockchain and once it get migrated into blockchain it become immutable.
+    Do take care of this line as well before writing solidity. It is just kind of compiler version. pragma solidity >=0.5.0 <0.6.0; 
+
+    CHAPTER 2: State Variables & Integers  
+    
+    State variables are permanently stored in contract storage. This means they're written to the Ethereum blockchain.    
+    Unsigned Integers: uint It is non-negative integers.
+    Signed Integers: int for positive integers in solidity.
     
     CHAPTER 3
     
@@ -32,7 +41,7 @@ In NutShell it's all about the basics of whole solidity programming language and
     
     CHAPTER 14: Web3.js
   
-  -> State Variables & Integers  Unsigned Integers: uint
+ 
   -> Math Operations
   -> Structs
   -> Arrays  Public Arrays
