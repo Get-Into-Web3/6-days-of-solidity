@@ -3,6 +3,7 @@
 ### Day 1 Learnings
 
 # First Lesson
+[Level-1 CryptoZombie](https://share.cryptozombies.io/en/lesson/1/share/Manan?id=Y3p8MTY5OTE4)
 
 1. In the first lesson, I learnt about how to start a program in Solidity which is a language for writing Smart Contracts. 
 First of all, we need to define a version of the Solidity we are using. 
@@ -107,6 +108,10 @@ In Lesson 3, we discuss some more advanced Solidity Concepts.
 	- Amount of gas required depends on how complex a function's logic is.
 	- The total gas cost of your function is the sum of the gas costs of all its individual operations.
 6. Storage Pointer can be passed to a struct as an argument to a private or internal function. 
+7. We can also pass parameters to a modifier.
+8. View functions don't cost any gas when they are called externally by a user. Becuase they actually change anything. 
+9. Storage operation is expensive as the data is permanantly written to the blockchain. 
+10. We can use the memory keyword with arrays to create a new array inside a function without needing to write anything to storage. The array will only exist until the end of the function call, and this is a lot cheaper gas-wise than updating an array in storage — free if it's a view function called externally.
 
 ### Day 4 Learnings
 
