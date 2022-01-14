@@ -103,7 +103,10 @@ In Lesson 3, we discuss some more advanced Solidity Concepts.
 2. If we want a contract that can be changed by only a certain person or who created that contract, we can make the contract Ownable.They then have an owner who has special priveleges. 
 3. Constructor gets executed only once when the contract is first created. 
 4. Modifiers are kind of half-functions that are used to modify other functions, usually to check some requirements prior to execution.
-5. 
+5. Users have to pay every time they execute a function on the DApp using a currency called gas. 
+	- Amount of gas required depends on how complex a function's logic is.
+	- The total gas cost of your function is the sum of the gas costs of all its individual operations.
+6. Storage Pointer can be passed to a struct as an argument to a private or internal function. 
 
 ### Day 4 Learnings
 
