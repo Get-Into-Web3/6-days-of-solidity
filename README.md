@@ -63,6 +63,7 @@ If we do not access any data in the app, it is a pure function.
 
 
 ### Day 2 Learnings
+[Level-2 CryptoZombie](https://share.cryptozombies.io/en/lesson/2/share/Manan?id=Y3p8MTY5OTE4)
 
 1. Mappings are a key-value store for storing and looking up data. 
 It is defined like this:
@@ -98,6 +99,7 @@ In an interface, function definition is not there.
 10. We can also write if statements in Solidity that tests a condition and then executes code if the condition passes.
 
 ### Day 3 Learnings
+[Level-3 CryptoZombie](https://share.cryptozombies.io/en/lesson/3/share/Manan?id=Y3p8MTY5OTE4)
 
 In Lesson 3, we discuss some more advanced Solidity Concepts.
 1. After we deploy a contract to Ethereum, it is immutable. That means it cannot be modified. 
