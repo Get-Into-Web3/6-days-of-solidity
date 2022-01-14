@@ -98,7 +98,12 @@ In an interface, function definition is not there.
 
 ### Day 3 Learnings
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+In Lesson 3, we discuss some more advanced Solidity Concepts.
+1. After we deploy a contract to Ethereum, it is immutable. That means it cannot be modified. 
+2. If we want a contract that can be changed by only a certain person or who created that contract, we can make the contract Ownable.They then have an owner who has special priveleges. 
+3. Constructor gets executed only once when the contract is first created. 
+4. Modifiers are kind of half-functions that are used to modify other functions, usually to check some requirements prior to execution.
+5. 
 
 ### Day 4 Learnings
 
