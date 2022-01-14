@@ -4,49 +4,45 @@
 
 In NutShell it's all about the basics of whole solidity programming language and I will bet you will get more excited to learn more in this Course.
     
-    LESSON OVERVIEW:
+  LESSON OVERVIEW:
     
-    In Starting you will get to know that what is our main mission and at the end what you want to achieve. Basically we are going to make Zombiefactory in which zombie get         created so we will be going to implement such feature so that user can easily make their own choice of Zombie.
+    In Starting you will get to know that what is our main mission and at the end what you want to achieve. 
+    Basically we are going to make Zombiefactory in which zombie get created so we will be going to implement 
+    such feature so that user can easily make their own choice of Zombie.
     
-    CHAPTER 1: Contracts
+  CHAPTER 1: Contracts
     
-    Contracts is nothing just the piece of code which get migrated into blockchain and once it get migrated into blockchain it become immutable.
+    Contracts is nothing just the piece of code which get migrated into blockchain and once it get migrated into 
+    blockchain it become immutable.
     Do take care of this line as well before writing solidity. It is just kind of compiler version. pragma solidity >=0.5.0 <0.6.0; 
 
-    CHAPTER 2: State Variables & Integers  
+  CHAPTER 2: State Variables & Integers  
     
     State variables are permanently stored in contract storage. This means they're written to the Ethereum blockchain.    
     Unsigned Integers: uint It is non-negative integers.
     Signed Integers: int for positive integers in solidity.
     
-    CHAPTER 3
+  CHAPTER 3: Math Operations
     
-    CHAPTER 4
+  CHAPTER 4: Structs
     
-    CHAPTER 5
-    
-    CHAPTER 6
-    
-    CHAPTER 7
-    
-    CHAPTER 8
-        Working With Structs and Arrays
-    CHAPTER 9
-        Private / Public Functions
-    CHAPTER 10: More on Functions
-    
-    CHAPTER 11: Keccak256 and Typecasting
-    
-    CHAPTER 13: Events
-    
-    CHAPTER 14: Web3.js
+  CHAPTER 5: Arrays  
   
- 
-  -> Math Operations
-  -> Structs
-  -> Arrays  Public Arrays
-  -> Function Declarations
-  
+     Public Arrays
+    
+  CHAPTER 6: Function Declarations
+    
+  CHAPTER 7:
+    
+  CHAPTER 8: Working With Structs and Arrays
+       
+  CHAPTER 9 & 10: Private / Public Functions
+    
+  CHAPTER 11 & 12: Keccak256 and Typecasting
+    
+  CHAPTER 13: Events
+    
+  CHAPTER 14: Web3.js
 
 
 ### Day 2 Learnings
