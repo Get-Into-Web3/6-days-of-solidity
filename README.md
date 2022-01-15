@@ -11,17 +11,17 @@ In NutShell it's all about the basics of whole solidity programming language and
     such feature so that user can easily make their own choice of Zombie.
     
   CHAPTER 1: Contracts
-    ```
-    - Contracts is nothing just the piece of code which get migrated into blockchain and once it get migrated into 
-      blockchain it become immutable.
-    - Do take care of this line as well before writing solidity. It is just kind of compiler version. 
-      pragma solidity >=0.5.0 <0.6.0; 
-    ```
+   
+    Contracts is nothing just the piece of code which get migrated into blockchain and once it get migrated into 
+    blockchain it become immutable.
+    Do take care of this line as well before writing solidity. It is just kind of compiler version. 
+    pragma solidity >=0.5.0 <0.6.0; 
+   
   CHAPTER 2: State Variables & Integers  
     
     State variables are permanently stored in contract storage. This means they're written to the Ethereum blockchain.    
     Unsigned Integers: (uint) It is non-negative integers.
-    Signed Integers: (int) for positive integers in solidity.
+    Signed Integers: (int) for any integers in solidity.
     
   CHAPTER 3: Math Operations
    
@@ -41,6 +41,7 @@ In NutShell it's all about the basics of whole solidity programming language and
   CHAPTER 5: Arrays  
     
     Array is a common Data Structure in every Programming language.Everyone know how it works and its feature,its useCase.
+    
     In Solidity also two types of Array are present:
     Fixed Size Array -> As name suggest we have to give the size before hand.
     Dynamic Array -> Again name Suggest we don't have to give the actual size before hand, it can keep growing.
@@ -53,6 +54,33 @@ In NutShell it's all about the basics of whole solidity programming language and
     Dynamic Array = uint[] dyn;
     
   CHAPTER 6: Function Declarations
+  
+    Function is used in programming to write better cdes. It also helps to remove redundancy in our code.
+    
+    Decalaration:
+       
+       function  nameOfFunction( string _str, uint _y) public {
+       
+                //write code here
+        }  
+    
+    Little About Argument & Parameter that are used in function.
+    
+    In function declaration we pass Parameters.It can be used in two ways:
+    
+        1) Pass by Value => It means it will create a new copy of what you are passing as Argument while calling the function.
+           In this it will not affect your original argument.
+        2) Pass by reference => It means it will not create any copy,it just use the address of argument that you are passing 
+           while calling the function.But It will manipulate your original argument.
+           
+           We use memory for pass by Value in Solidity.
+           
+           Example:
+           function exmaple(string memory _name, uint memory _age) public {
+           }
+            
+    In function call we pass argument. example: nameofFunction("Aman" , 20); 
+    
     
   CHAPTER 7:
     
