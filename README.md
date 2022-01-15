@@ -93,12 +93,52 @@ In NutShell it's all about the basics of whole solidity programming language and
        
     To Insert into Array take help of push() function it come handy with array.
 
-  CHAPTER 9 & 10: Private / Public Functions
+  CHAPTER 9: Private / Public Functions
     
     Private Function -> It will be used only in that contract where it defined.
     Public Function ->  From any where we can access it.
     
     Be Cautiuos with public function beacuse it causes vulnerabilities issue in our code. So, better use Private instead Public. 
+    
+  CHAPTER 10: More on Functions:
+     
+    Return Values: It is completely depend upon the return type of function,if function type is string then it will return string only.
+    
+       Example: 
+       
+       uint numbePlate = 5955;      
+       function _taxiNumber() private returns (uint memory)
+       {
+            return numberPlate;
+       }
+    
+    Function Modifiers: So, It is actually new to me and very suprising to see that function also have modifiers.
+        
+        There is two types of Function Modeifiers we have in Solidity.
+        
+        View - In View it doesn't change the function at all it just allow us to look inside function.
+            
+            Example:
+            
+            string name = "Aman";
+            function test( --- here we are not passing any parameter ---) private view returns (string memory)
+            {
+                return name;
+            }
+            
+        Pure - But using Pure we can modify our function for sure but with our parameter only. it will not access any 
+        other elemnet in our code.
+        
+            Example:
+           
+            function test(uint _a,uint _b) private view returns (uint)
+            {
+                return a + b;
+            }
+            
+        Note: It may be hard to remember when to mark functions as pure/view. Luckily the Solidity compiler is 
+        good about issuing warnings to let you know when you should use one of these modifiers.
+           
     
   CHAPTER 11 & 12: Keccak256 and Typecasting
     
