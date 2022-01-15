@@ -12,10 +12,10 @@ In NutShell it's all about the basics of whole solidity programming language and
     
   CHAPTER 1: Contracts
     
-    Contracts is nothing just the piece of code which get migrated into blockchain and once it get migrated into 
-    blockchain it become immutable.
-    Do take care of this line as well before writing solidity. It is just kind of compiler version. 
-    pragma solidity >=0.5.0 <0.6.0; 
+    - Contracts is nothing just the piece of code which get migrated into blockchain and once it get migrated into 
+      blockchain it become immutable.
+    - Do take care of this line as well before writing solidity. It is just kind of compiler version. 
+      pragma solidity >=0.5.0 <0.6.0; 
 
   CHAPTER 2: State Variables & Integers  
     
