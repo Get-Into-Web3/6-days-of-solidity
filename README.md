@@ -82,7 +82,17 @@ In NutShell it's all about the basics of whole solidity programming language and
     In function call we pass argument. example: nameofFunction("Aman" , 20); 
     
     
-  CHAPTER 7:
+  CHAPTER 7: Working With Structs and Arrays
+    
+    In this Lesson you will be goin to use struct and array together. It is not complicate that it looks initially.
+    
+    -> You know how to create Array.
+    -> you know how to make struct.
+    -> Now just change the data Type of Array with struct name. In this way that array will become the struct Array to hold
+       Zombie feature such as name,dna.
+       
+    To Insert into Array take help of push() function it come handy with array.
+
     
   CHAPTER 8: Working With Structs and Arrays
        
