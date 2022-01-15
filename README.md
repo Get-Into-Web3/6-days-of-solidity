@@ -116,13 +116,16 @@ In Lesson 3, we discuss some more advanced Solidity Concepts.
 10. We can use the memory keyword with arrays to create a new array inside a function without needing to write anything to storage. The array will only exist until the end of the function call, and this is a lot cheaper gas-wise than updating an array in storage — free if it's a view function called externally.
 
 ### Day 4 Learnings
+[Level-4 CryptoZombie](https://share.cryptozombies.io/en/lesson/4/share/Manan?id=WyJjenwxNjk5MTgiLDEsMTRd)
 
 1. In Ethereum, both the money (Ether), the data (transaction payload), and the contract code itself all live on Ethereum, it's possible for us to call a function and pay money to the contract at the same time.
 2. Wei is the smallest unit of Ethereum.
 3. We cannot transfer Ether to an address unless that address is of type address payable. 
 4. keccak256 hash function lets us generate random numbers too.
 	- Nonce is a number that is only ever used once.
-5. 
+5. In Ethereum, when you call a function on a contract, you broadcast it to a node or nodes on the network as a transaction. 
+6. The nodes on the network then collect a bunch of transactions, try to be the first to solve a computationally-intensive mathematical problem as a "Proof of Work", and then publish that group of transactions along with their Proof of Work (PoW) as a block to the rest of the network.
+7. Multiple modifiers can be used on a single function. 
 
 ### Day 5 Learnings
 
