@@ -14,7 +14,8 @@ In NutShell it's all about the basics of whole solidity programming language and
     
     Contracts is nothing just the piece of code which get migrated into blockchain and once it get migrated into 
     blockchain it become immutable.
-    Do take care of this line as well before writing solidity. It is just kind of compiler version. pragma solidity >=0.5.0 <0.6.0; 
+    Do take care of this line as well before writing solidity. It is just kind of compiler version. 
+    pragma solidity >=0.5.0 <0.6.0; 
 
   CHAPTER 2: State Variables & Integers  
     
@@ -23,6 +24,13 @@ In NutShell it's all about the basics of whole solidity programming language and
     Signed Integers: int for positive integers in solidity.
     
   CHAPTER 3: Math Operations
+   
+    Addition Operation => (3 + 2) >= 5
+    Subtraction Operation => (3 - 2) => 1
+    Multiplication Operation => (3 * 2) => 6
+    Division Operation => (3 / 2)  => 1 (Gives the Quotient value)
+    Modulo Operation => (3 % 2) => 1 (Gives the Remainder value)
+    Exponentiation Opeerartion => (2 ** 3) => 8 (Gives the Power value)
     
   CHAPTER 4: Structs
     
