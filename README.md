@@ -20,8 +20,8 @@ In NutShell it's all about the basics of whole solidity programming language and
   CHAPTER 2: State Variables & Integers  
     
     State variables are permanently stored in contract storage. This means they're written to the Ethereum blockchain.    
-    Unsigned Integers: uint It is non-negative integers.
-    Signed Integers: int for positive integers in solidity.
+    Unsigned Integers: (uint) It is non-negative integers.
+    Signed Integers: (int) for positive integers in solidity.
     
   CHAPTER 3: Math Operations
    
@@ -33,10 +33,24 @@ In NutShell it's all about the basics of whole solidity programming language and
     Exponentiation Opeerartion => (2 ** 3) => 8 (Gives the Power value)
     
   CHAPTER 4: Structs
+  
+    Struct is similar to that we had learnt in C,C++ nothing special here too. 
+    It allows us to create our data Type in simple terms.
+    In this Course we are using beacuse it will hold the basic charcteristic of our Zombie. (Initially the name and DNA).
     
   CHAPTER 5: Arrays  
-  
-     Public Arrays
+    
+    Array is a common Data Structure in every Programming language.Everyone know how it works and its feature,its useCase.
+    In Solidity also two types of Array are present:
+    Fixed Size Array -> As name suggest we have to give the size before hand.
+    Dynamic Array -> Again name Suggest we don't have to give the actual size before hand, it can keep growing.
+    
+    Public Arrays - It is nothing but we just give the array scope by public means we can access it from any contract,
+    Also by default it will create its getter method by solidity.
+    
+    Declaration of array
+    Fixed Size Array = uint[5] fxd;
+    Dynamic Array = uint[] dyn;
     
   CHAPTER 6: Function Declarations
     
