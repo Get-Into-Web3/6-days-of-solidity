@@ -120,7 +120,9 @@ In Lesson 3, we discuss some more advanced Solidity Concepts.
 1. In Ethereum, both the money (Ether), the data (transaction payload), and the contract code itself all live on Ethereum, it's possible for us to call a function and pay money to the contract at the same time.
 2. Wei is the smallest unit of Ethereum.
 3. We cannot transfer Ether to an address unless that address is of type address payable. 
-4. 
+4. keccak256 hash function lets us generate random numbers too.
+	- Nonce is a number that is only ever used once.
+5. 
 
 ### Day 5 Learnings
 
