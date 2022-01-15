@@ -68,11 +68,11 @@ In NutShell it's all about the basics of whole solidity programming language and
     
     In function declaration we pass Parameters.It can be used in two ways:
     
-        1) Pass by Value => It means it will create a new copy of what you are passing as Argument while calling the function.
-           In this it will not affect your original argument.
-        2) Pass by reference => It means it will not create any copy,it just use the address of argument that you are passing 
-           while calling the function.But It will manipulate your original argument.
-           
+        1) Pass by Value => It means it will create a new copy of what you are passing as Argument while calling 
+           the function. In this it will not affect your original argument.
+        2) Pass by reference => It means it will not create any copy,it just use the address of argument that 
+           you are passing.while calling the function.But It will manipulate your original argument.
+                 
            We use memory for pass by Value in Solidity.
            
            Example:
@@ -141,10 +141,37 @@ In NutShell it's all about the basics of whole solidity programming language and
            
     
   CHAPTER 11 & 12: Keccak256 and Typecasting
+        
+        Keccak256 is just the random hashing genrator.For Random generation of DNA for our Zombies.
+        
+            Declaration Example:
+                keccak256(abi.encodePacked("aaaab"));
+        
+        TypeCasting we know changing the data type in between our code of any variable as per our useCase.
+            
+            Example:
+                bytes eg;           
+                uint test = uint(eg);
+                
+        At last In this will pretty much completed our lesson just put it all together to make whole code work.Hurray!!!             
     
   CHAPTER 13: Events
+  
+        Events are a way for your contract to communicate that something happened on the blockchain to your app front-end, 
+        which can be 'listening' for certain events and take action when they happen.
+        
+            Declaration example:
+            
+                event IntegersAdded(uint x, uint y, uint result);
+                emit IntegersAdded(_x, _y, result);
+        
     
   CHAPTER 14: Web3.js
+          
+          In this Chapter you will get a little glimpse of web3.0, how it is going to work.
+          Ethereum has a Javascript library called Web3.js.
+          
+          Now In Chapter 15 you make your own Zombie and share with friends.
 
 
 ### Day 2 Learnings
