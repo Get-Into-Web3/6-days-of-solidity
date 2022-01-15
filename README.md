@@ -4,26 +4,26 @@
 
 In NutShell it's all about the basics of whole solidity programming language and I will bet you will get more excited to learn more in this Course.
     
-  LESSON OVERVIEW:
+  CHAPTER 1: LESSON OVERVIEW:
     
     In Starting you will get to know that what is our main mission and at the end what you want to achieve. 
     Basically we are going to make Zombiefactory in which zombie get created so we will be going to implement 
     such feature so that user can easily make their own choice of Zombie.
     
-  CHAPTER 1: Contracts
+  CHAPTER 2: Contracts
    
     Contracts is nothing just the piece of code which get migrated into blockchain and once it get migrated into 
     blockchain it become immutable.
     Do take care of this line as well before writing solidity. It is just kind of compiler version. 
     pragma solidity >=0.5.0 <0.6.0; 
    
-  CHAPTER 2: State Variables & Integers  
+  CHAPTER 3: State Variables & Integers  
     
     State variables are permanently stored in contract storage. This means they're written to the Ethereum blockchain.    
     Unsigned Integers: (uint) It is non-negative integers.
     Signed Integers: (int) for any integers in solidity.
     
-  CHAPTER 3: Math Operations
+  CHAPTER 4: Math Operations
    
     Addition Operation => (3 + 2) >= 5
     Subtraction Operation => (3 - 2) => 1
@@ -32,13 +32,13 @@ In NutShell it's all about the basics of whole solidity programming language and
     Modulo Operation => (3 % 2) => 1 (Gives the Remainder value)
     Exponentiation Opeerartion => (2 ** 3) => 8 (Gives the Power value)
     
-  CHAPTER 4: Structs
+  CHAPTER 5: Structs
   
     Struct is similar to that we had learnt in C,C++ nothing special here too. 
     It allows us to create our data Type in simple terms.
     In this Course we are using beacuse it will hold the basic charcteristic of our Zombie. (Initially the name and DNA).
     
-  CHAPTER 5: Arrays  
+  CHAPTER 6: Arrays  
     
     Array is a common Data Structure in every Programming language.Everyone know how it works and its feature,its useCase.
     
@@ -53,7 +53,7 @@ In NutShell it's all about the basics of whole solidity programming language and
     Fixed Size Array = uint[5] fxd;
     Dynamic Array = uint[] dyn;
     
-  CHAPTER 6: Function Declarations
+  CHAPTER 7: Function Declarations
   
     Function is used in programming to write better cdes. It also helps to remove redundancy in our code.
     
@@ -82,7 +82,7 @@ In NutShell it's all about the basics of whole solidity programming language and
     In function call we pass argument. example: nameofFunction("Aman" , 20); 
     
     
-  CHAPTER 7: Working With Structs and Arrays
+  CHAPTER 8: Working With Structs and Arrays
     
     In this Lesson you will be goin to use struct and array together. It is not complicate that it looks initially.
     
@@ -93,10 +93,12 @@ In NutShell it's all about the basics of whole solidity programming language and
        
     To Insert into Array take help of push() function it come handy with array.
 
-    
-  CHAPTER 8: Working With Structs and Arrays
-       
   CHAPTER 9 & 10: Private / Public Functions
+    
+    Private Function -> It will be used only in that contract where it defined.
+    Public Function ->  From any where we can access it.
+    
+    Be Cautiuos with public function beacuse it causes vulnerabilities issue in our code. So, better use Private instead Public. 
     
   CHAPTER 11 & 12: Keccak256 and Typecasting
     
