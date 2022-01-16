@@ -164,6 +164,7 @@ var++;
 /* This is a multi-line comment.
    Solidity is great
 */
+```
 
 ### Day 6 Learnings
 
