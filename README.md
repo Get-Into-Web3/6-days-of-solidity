@@ -128,9 +128,9 @@ In Lesson 3, we discuss some more advanced Solidity Concepts.
 7. Multiple modifiers can be used on a single function. 
 
 ### Day 5 Learnings
+[Level-5 CryptZombie](https://share.cryptozombies.io/en/lesson/5/share/H4XF13LD_MORRIS_%F0%9F%92%AF%F0%9F%92%AF%F0%9F%98%8E%F0%9F%92%AF%F0%9F%92%AF?id=Y3p8MTY5OTE4)
 
 This Lesson discusses about ERC721 and Crypto-Collectibles.
-- **Chapter-1**
 1. A token on Ethereum is basically just a smart contract that follows some common rules — namely it implements a standard set of functions that all other token contracts share.
 2. A smart contract usually has a mapping 
 ```
@@ -138,15 +138,32 @@ mapping(address => uint256) balances;
 ```
 This mapping keeps track of how much balance each address has.
 3. ERC721 tokens are not interchangeable since each one is assumed to be unique, and are not divisible. You can only trade them in whole units, and each one has a unique ID.
-
-- **Chapter-2, ERC721 Standard, Multiple Inheritance**
-1. When implementing a token contract, the first thing we do is copy the interface to its own Solidity file and import it.
-2. In Solidity, our contract can inherit from multiple contracts like
+4. When implementing a token contract, the first thing we do is copy the interface to its own Solidity file and import it.
+5. In Solidity, our contract can inherit from multiple contracts like
 ```
 contract Steering is Car, Vehicle{
 }
 ```
-3. 
+6. OpenZeppelin has created a library called SafeMath that helps to prevent the issue of overflow. 
+7. The difference between assert and require is that require will refund the user the rest of their gas when a function fails, whereas assert will not. 
+8. In safemath, if we want to add 1 to a variable, we use the following syntax
+```
+var = var.add(1);
+```
+instead of
+```
+var++;
+```
+9. SafeMath16 and SafeMath32 prevents overflow issue for uint16 and uint32 respectively. 
+10. For single line comment:
+```
+// This is a single-line comment
+```
+	- For multi-line comment:
+```
+/* This is a multi-line comment.
+   Solidity is great
+*/
 
 ### Day 6 Learnings
 
