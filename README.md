@@ -129,7 +129,16 @@ In Lesson 3, we discuss some more advanced Solidity Concepts.
 
 ### Day 5 Learnings
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This Lesson discusses about ERC721 and Crypto-Collectibles.
+[Chapter-1]
+1. A token on Ethereum is basically just a smart contract that follows some common rules — namely it implements a standard set of functions that all other token contracts share.
+2. A smart contract usually has a mapping 
+```
+mapping(address => uint256) balances;
+```
+This mapping keeps track of how much balance each address has.
+3. ERC721 tokens are not interchangeable since each one is assumed to be unique, and are not divisible. You can only trade them in whole units, and each one has a unique ID.
+
 
 ### Day 6 Learnings
 
