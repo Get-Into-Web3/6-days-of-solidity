@@ -5,7 +5,7 @@
 # First Lesson
 [Level-1 CryptoZombie](https://share.cryptozombies.io/en/lesson/1/share/Manan?id=Y3p8MTY5OTE4)
 <p align="center">
-  <img src="https://www.shawntabrizi.com/assets/images/img_5add32b676792.png" width="350" height="200" title="hover text">
+  <img src="https://www.shawntabrizi.com/assets/images/img_5add32b676792.png" width="350" height="350" title="hover text">
 </p>
 1. In the first lesson, I learnt about how to start a program in Solidity which is a language for writing Smart Contracts. 
 First of all, we need to define a version of the Solidity we are using. 
