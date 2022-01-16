@@ -159,7 +159,7 @@ var++;
 ```
 // This is a single-line comment
 ```
-	- For multi-line comment:
+For multi-line comment:
 ```
 /* This is a multi-line comment.
    Solidity is great
