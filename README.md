@@ -178,51 +178,50 @@ In NutShell it's all about the basics of whole solidity programming language and
   
   
   
-  CHAPTER 1: LESSON OVERVIEW:
+  CHAPTER 1: Lesson 2 Overview:
     
 
     
-  CHAPTER 2: Contracts
+  CHAPTER 2: Mappings and Addresses
    
  
    
-  CHAPTER 3: State Variables & Integers  
+  CHAPTER 3: Msg.sender  
     
     
-  CHAPTER 4: Math Operations
+  CHAPTER 4: Require
    
     
-  CHAPTER 5: Structs
+  CHAPTER 5: Inheritance
   
     
-  CHAPTER 6: Arrays  
+  CHAPTER 6: Import  
     
+  CHAPTER 7: Storage vs Memory (Data location)
 
-    
-  CHAPTER 7: Function Declarations
+  CHAPTER 8: Zombie DNA
   
+     
+    
+  CHAPTER 9: More on Function Visibility
+
+
+  CHAPTER 10: What Do Zombies Eat?
 
     
-    
-  CHAPTER 8: Working With Structs and Arrays
-
-
-  CHAPTER 9: Private / Public Functions
-
-    
-  CHAPTER 10: More on Functions:
+  CHAPTER 11: Using an Interface
 
            
     
-  CHAPTER 11 & 12: Keccak256 and Typecasting
+  CHAPTER 12: Handling Multiple Return Values
           
     
-  CHAPTER 13: Events
+  Bonus: Kitty Genes
   
 
         
     
-  CHAPTER 14: Web3.js
+  WRAP UP
 
 
 
