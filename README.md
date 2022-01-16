@@ -130,7 +130,7 @@ In Lesson 3, we discuss some more advanced Solidity Concepts.
 ### Day 5 Learnings
 
 This Lesson discusses about ERC721 and Crypto-Collectibles.
-[Chapter-1]
+- **Chapter-1**
 1. A token on Ethereum is basically just a smart contract that follows some common rules — namely it implements a standard set of functions that all other token contracts share.
 2. A smart contract usually has a mapping 
 ```
@@ -139,6 +139,14 @@ mapping(address => uint256) balances;
 This mapping keeps track of how much balance each address has.
 3. ERC721 tokens are not interchangeable since each one is assumed to be unique, and are not divisible. You can only trade them in whole units, and each one has a unique ID.
 
+- **Chapter-2, ERC721 Standard, Multiple Inheritance**
+1. When implementing a token contract, the first thing we do is copy the interface to its own Solidity file and import it.
+2. In Solidity, our contract can inherit from multiple contracts like
+```
+contract Steering is Car, Vehicle{
+}
+```
+3. 
 
 ### Day 6 Learnings
 
