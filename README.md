@@ -9,6 +9,7 @@
 </p>
 1. In the first lesson, I learnt about how to start a program in Solidity which is a language for writing Smart Contracts. 
 First of all, we need to define a version of the Solidity we are using. 
+
 The same can be done using 
 ```
 pragma solidity <version>;
