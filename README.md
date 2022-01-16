@@ -174,9 +174,57 @@ In NutShell it's all about the basics of whole solidity programming language and
           Now In Chapter 15 you make your own Zombie and share with friends.
 
 
-### Day 2 Learnings
+### Day 2 Zombies Attack Their Victims
+  
+  
+  
+  CHAPTER 1: LESSON OVERVIEW:
+    
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+  CHAPTER 2: Contracts
+   
+ 
+   
+  CHAPTER 3: State Variables & Integers  
+    
+    
+  CHAPTER 4: Math Operations
+   
+    
+  CHAPTER 5: Structs
+  
+    
+  CHAPTER 6: Arrays  
+    
+
+    
+  CHAPTER 7: Function Declarations
+  
+
+    
+    
+  CHAPTER 8: Working With Structs and Arrays
+
+
+  CHAPTER 9: Private / Public Functions
+
+    
+  CHAPTER 10: More on Functions:
+
+           
+    
+  CHAPTER 11 & 12: Keccak256 and Typecasting
+          
+    
+  CHAPTER 13: Events
+  
+
+        
+    
+  CHAPTER 14: Web3.js
+
+
 
 ### Day 3 Learnings
 
