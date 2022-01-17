@@ -171,4 +171,40 @@ For multi-line comment:
 
 ### Day 6 Learnings
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This lesson discusses about App Front-Ends and Web3.js
+Web3.js enables us to interact with our smart contract and build a basic front-end for our DApp.
+1. Ethereum nodes only speak a language called JSON-RPC.
+2. Steps to install web3
+```
+> npm install web3
+> yard add web3
+```
+3. To include web3.js in your project, add through the script tag
+```
+<script language="javascript" type="text/javascript" src="web3.min.js"></script>
+```
+4. Infura is a service that maintains a set of Ethereum nodes with a caching layer for fast reads, which you can access for free through their API. Using Infura as a provider, you can reliably send and receive messages to/from the Ethereum blockchain without needing to set up and maintain your own node.
+5. You can set up Web3 to use Infura as your web3 provider as follows:
+```
+var web3 = new Web3(new Web3.providers.WebsocketProvider("wss://mainnet.infura.io/ws"));
+```
+6. Metamask is a browser extension for Chrome and Firefox that lets users securely manage their Ethereum accounts and private keys, and use these accounts to interact with websites that are using Web3.js.
+7. To check if web3 has been injected by the browser (Metamask):
+```
+window.addEventListener('load', function() {
+
+        // Checking if Web3 has been injected by the browser (Mist/MetaMask)
+        if (typeof web3 !== 'undefined') {
+          // Use Mist/MetaMask's provider
+          web3js = new Web3(web3.currentProvider);
+        } else {
+          // Handle the case where the user doesn't have Metamask installed
+          // Probably show them a message prompting them to install Metamask
+        }
+
+        // Now you can start your app & access web3 freely:
+        startApp()
+
+      })
+```
+
