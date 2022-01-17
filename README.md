@@ -175,15 +175,25 @@ In NutShell it's all about the basics of whole solidity programming language and
 
 
 ### Day 2 Zombies Attack Their Victims
-  
-  
+        
+In this Module we are going to add Multiplayer feature as well as adding some extra feature in creating Zombie army.
   
   CHAPTER 1: Lesson 2 Overview:
     
+  Zombie Feeding
+  When a zombie feeds, it infects the host with a virus. The virus then turns the host into a new zombie that joins your army. 
+  The new zombie's DNA will be calculated from the previous zombie's DNA and the host's DNA.
 
     
   CHAPTER 2: Mappings and Addresses
+  
+    Addresses: The Ethereum blockchain is made up of accounts, which you can think of like bank accounts. An account has a balance 
+               of Ether (the currency used on the Ethereum blockchain), and you can send and receive Ether payments to other accounts, 
+               just like your bank account can wire transfer money to other bank accounts.
    
+  
+    Mapping:   A mapping is essentially a key-value store for storing and looking up data. In the first example, the key is an 
+               address and the value is a uint, and in the second example the key is a uint and the value a string.
  
    
   CHAPTER 3: Msg.sender  
