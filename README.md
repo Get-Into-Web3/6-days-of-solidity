@@ -207,4 +207,7 @@ window.addEventListener('load', function() {
 
       })
 ```
+8. Web3.js needs two things to talk to the contract: **Address** and the **ABI**.
+9. ABI stands for Application Binary Interface. Basically it's a representation of your contracts' methods in JSON format that tells Web3.js how to format function calls in a way your contract will understand.
+10. 
 
