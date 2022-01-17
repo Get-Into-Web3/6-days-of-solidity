@@ -6,8 +6,9 @@
 
 
 Completed Leason 1
-Learned the Basics of Solidity
-Things I learned :
+
+Today I Learned the Basics of Solidity here are the things I learned Today :
+
 * State variables and Local variables
 * Different type of math operations
 * Structs
