@@ -209,5 +209,14 @@ window.addEventListener('load', function() {
 ```
 8. Web3.js needs two things to talk to the contract: **Address** and the **ABI**.
 9. ABI stands for Application Binary Interface. Basically it's a representation of your contracts' methods in JSON format that tells Web3.js how to format function calls in a way your contract will understand.
-10. 
-
+10. call is used for view and pure functions. It only runs on the local node, and won't create a transaction on the blockchain.
+11. send will create a transaction and change data on the blockchain. You'll need to use send for any functions that aren't view or pure.
+Syntax for sending a transaction is:
+```
+myContract.methods.myMethod(123).send()
+```
+12. We can get the user account on Metamask like this:
+```
+var userAccount = web3.eth.accounts[0]
+```
+13. 
