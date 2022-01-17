@@ -180,11 +180,10 @@ In this Module we are going to add Multiplayer feature as well as adding some ex
   
   CHAPTER 1: Lesson 2 Overview:
     
-     Zombie Feeding :  When a zombie feeds, it infects the host with a virus. The virus then turns the host into a new zombie that joins your army. 
-                       The new zombie's DNA will be calculated from the previous zombie's DNA and the host's DNA.
-        
-
-    
+     Zombie Feeding :  When a zombie feeds, it infects the host with a virus. The virus then turns the host into a new 
+                       zombie that joins your army.The new zombie's DNA will be calculated from the previous zombie's 
+                       DNA and the host's DNA.
+                          
   CHAPTER 2: Mappings and Addresses
   
     Addresses: The Ethereum blockchain is made up of accounts, which you can think of like bank accounts. An account has a balance 
@@ -197,43 +196,88 @@ In this Module we are going to add Multiplayer feature as well as adding some ex
  
    
   CHAPTER 3: Msg.sender  
-    
+  
+    Now that we have our mappings to keep track of who owns a zombie, we'll want to update the _createZombie method to use them.
+
+    In order to do this, we need to use something called msg.sender.
+
+    msg.sender : In Solidity, there are certain global variables that are available to all functions. One of these is msg.sender, 
+                 which refers to the address of the person (or smart contract) who called the current function.
     
   CHAPTER 4: Require
+    
+    In lesson 1, we made it so users can create new zombies by calling createRandomZombie and entering a name. However, if users 
+    could keep calling this function to create unlimited zombies in their army, the game wouldn't be very fun.
+    
+    Thus require is quite useful for verifying certain conditions that must be true before running a function.
    
     
   CHAPTER 5: Inheritance
-  
+    
+    Our game code is getting quite long. Rather than making one extremely long contract, sometimes it makes sense 
+    to split your code logic across multiple contracts to organize the code.
+    
+    Inheritance provide the code reusibilty feature.
     
   CHAPTER 6: Import  
+  
+    Our code was getting pretty long, so we split it up into multiple files to make it more manageable. 
+    This is normally how you will handle long codebases in your Solidity projects.
+
+    When you have multiple files and you want to import one file into another, Solidity uses the import keyword.
     
   CHAPTER 7: Storage vs Memory (Data location)
-
-  CHAPTER 8: Zombie DNA
   
-     
+    Storage refers to variables stored permanently on the blockchain. 
+    
+    Memory variables are temporary, and are erased between external function calls to your contract. 
+    Think of it like your computer's hard disk vs RAM.
+    
+  CHAPTER 8: Zombie DNA
+    
+    The formula for calculating a new zombie's DNA is simple: the average between the feeding zombie's DNA and the target's DNA.
+    
+    Using thsi we will Calculate:
+    uint newZombieDna = (zombieDna + targetDna) / 2;
     
   CHAPTER 9: More on Function Visibility
+  
+    Internal is the same as private, except that it's also accessible to contracts that inherit from this contract.
+    External is similar to public, except that these functions can ONLY be called outside the contract — they can't 
+    be called by other functions inside that contract.
 
 
   CHAPTER 10: What Do Zombies Eat?
-
+    
+    CryptoZombies love to eat... CryptoKitties!
+    In order to do this we'll need to read the kittyDna from the CryptoKitties smart contract. We can do that because 
+    the CryptoKitties data is stored openly on the blockchain.
+    
+    By including this interface in our dapp's code our contract knows what the other contract's functions look like, 
+    how to call them, and what sort of response to expect.Now let's declare our interface for the CryptoKitties contract.
     
   CHAPTER 11: Using an Interface
 
-           
+    Continuing our previous example with NumberInterface, once we've defined the interface as:
+
+    contract NumberInterface {
+      function getNum(address _myAddress) public view returns (uint);
+    }
     
   CHAPTER 12: Handling Multiple Return Values
-          
+  
+    This getKitty function is the first example we've seen that returns multiple values. Let's look at how to handle them:          
     
   Bonus: Kitty Genes
-  
 
-        
-    
-  WRAP UP
+    Let's make it so zombies made from kitties have some unique feature that shows they're cat-zombies.
+    To do this, we can add some special kitty code in the zombie's DNA.
 
+    If you recall from lesson 1, we're currently only using the first 12 digits of our 16 digit DNA to determine 
+    the zombie's appearance. So let's use the last 2 unused digits to handle "special" characteristics.
 
+    We'll say that cat-zombies have 99 as their last two digits of DNA (since cats have 9 lives). 
+    So in our code,we'll say if a zombie comes from a cat, then set the last two digits of DNA to 99.
 
 ### Day 3 Learnings
 
