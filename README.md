@@ -174,57 +174,53 @@ In NutShell it's all about the basics of whole solidity programming language and
           Now In Chapter 15 you make your own Zombie and share with friends.
 
 
-### Day 2 Zombies Attack Their Victims
-        
+Day 2 Zombies Attack Their Victims
+
 In this Module we are going to add Multiplayer feature as well as adding some extra feature in creating Zombie army.
-  
-  CHAPTER 1: Lesson 2 Overview:
-    
+
+CHAPTER 1: Lesson 2 Overview:
+
      Zombie Feeding :  When a zombie feeds, it infects the host with a virus. The virus then turns the host into a new 
                        zombie that joins your army.The new zombie's DNA will be calculated from the previous zombie's 
                        DNA and the host's DNA.
-                          
-  CHAPTER 2: Mappings and Addresses
-  
+                   
+CHAPTER 2: Mappings and Addresses
+
     Addresses: The Ethereum blockchain is made up of accounts, which you can think of like bank accounts. An account has a balance 
                of Ether (the currency used on the Ethereum blockchain), and you can send and receive Ether payments to other accounts, 
                just like your bank account can wire transfer money to other bank accounts.
-   
-  
+
+
     Mapping:   A mapping is essentially a key-value store for storing and looking up data. In the first example, the key is an 
                address and the value is a uint, and in the second example the key is a uint and the value a string.
- 
-   
-  CHAPTER 3: Msg.sender  
-  
-    Now that we have our mappings to keep track of who owns a zombie, we'll want to update the _createZombie method to use them.
+           
+CHAPTER 3: Msg.sender
 
+    Now that we have our mappings to keep track of who owns a zombie, we'll want to update the _createZombie method to use them.
     In order to do this, we need to use something called msg.sender.
 
     msg.sender : In Solidity, there are certain global variables that are available to all functions. One of these is msg.sender, 
                  which refers to the address of the person (or smart contract) who called the current function.
-    
-  CHAPTER 4: Require
-    
+             
+CHAPTER 4: Require
+
     In lesson 1, we made it so users can create new zombies by calling createRandomZombie and entering a name. However, if users 
     could keep calling this function to create unlimited zombies in their army, the game wouldn't be very fun.
-    
+
     Thus require is quite useful for verifying certain conditions that must be true before running a function.
-   
-    
-  CHAPTER 5: Inheritance
-    
+CHAPTER 5: Inheritance
+
     Our game code is getting quite long. Rather than making one extremely long contract, sometimes it makes sense 
     to split your code logic across multiple contracts to organize the code.
-    
+
     Inheritance provide the code reusibilty feature.
-    
-  CHAPTER 6: Import  
-  
+CHAPTER 6: Import
+
     Our code was getting pretty long, so we split it up into multiple files to make it more manageable. 
     This is normally how you will handle long codebases in your Solidity projects.
 
     When you have multiple files and you want to import one file into another, Solidity uses the import keyword.
+
     
   CHAPTER 7: Storage vs Memory (Data location)
   
