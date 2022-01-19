@@ -279,8 +279,22 @@ In this Module we are going to add Multiplayer feature as well as adding some ex
 
 ### Day 3 Advanced Solidity Concepts
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+In this Module we will see the Actual Blockchain Implementation, why is it so have such a huge hype behind the 
+smart contract and all the other cool stuffs.
 
+  CHAPTER 1: Immutability of Contracts
+    
+    We have heard lot about security in blockchain so how it looks.
+    -> First, thing if we deployed the smart contract in blockchain then it can't be further modified it will set once for all.
+    -> So,If you find the bug in your contract after you had deployed, then you have to write new smart contract by fixing that 
+       issue and deployed it again, in this way it become immutable and more secure than any other API or CODE.
+    
+    What is our Concern in this Project?
+    
+    We had hardcoded the address of kittysmart Contract so we have to take care for future option what if their address get corrupted,
+    or give any other faults later on we will not be able to solve that issue once we deployed the contract, so we will use the function to 
+    write the address instead of hardcoding it.
+ 
 ### Day 4 Learnings
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
