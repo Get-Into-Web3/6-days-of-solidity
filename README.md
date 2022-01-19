@@ -277,7 +277,7 @@ In this Module we are going to add Multiplayer feature as well as adding some ex
     We'll say that cat-zombies have 99 as their last two digits of DNA (since cats have 9 lives). 
     So in our code,we'll say if a zombie comes from a cat, then set the last two digits of DNA to 99.
 
-### Day 3 Learnings
+### Day 3 Advanced Solidity Concepts
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
