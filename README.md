@@ -304,6 +304,27 @@ smart contract and all the other cool stuffs.
     of dapps then how it can be decentralised,So we have to take a look over the code such that owner itself in future doesn't have 
     a backdoor to fraud the client.
     
+  CHAPTER 4: Gas
+    
+    Gas is basically a fee which is taken by ethereum to run the computation of your smart contract.So, every time a user call the 
+    function it have to paid that amount, also it is not fixed depends upon the number of operation as well as storage. So, it will be 
+    very necessarily to make code optimization at gret levl, beacuse it' all money that will go.
+    
+    To minimze the gas fee little bit use struct for variables to declared,also in clustered manner.
+    
+    eg. 
+        struct number{
+            uint8 a;
+            uint8 b;
+            uint32 x;
+            uint32 y;
+        }
+    
+    Now we will be doing the same,also we get to know why there is so much structs all around the contracts.
+    
+    We will adding two more feature which is level & readytime, declared in struct becuase now we know why!!!
+    
+    
 ### Day 4 Learnings
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
