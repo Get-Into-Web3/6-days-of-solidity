@@ -173,8 +173,7 @@ In NutShell it's all about the basics of whole solidity programming language and
           
           Now In Chapter 15 you make your own Zombie and share with friends.
 
-
-Day 2 Zombies Attack Their Victims
+### Day 2 Zombies Attack Their Victims
 
 In this Module we are going to add Multiplayer feature as well as adding some extra feature to make our Zombie army appearnace little different.
 
@@ -294,7 +293,17 @@ smart contract and all the other cool stuffs.
     We had hardcoded the address of kittysmart Contract so we have to take care for future option what if their address get corrupted,
     or give any other faults later on we will not be able to solve that issue once we deployed the contract, so we will use the function to 
     write the address instead of hardcoding it.
- 
+    
+  CHAPTER 2 & 3: Ownable Contracts , onlyOwner Function Modifier
+  
+    In Chapter-1 we have created the function which is external so anybody can alter the address other than the original owner.
+    So we have to prevent that issue. To do that we will be using OpenZeppelin's Ownable contract in our dapp.
+    
+    In Chapter 3, we are just adding onlyOwner modifier after external keyword in function that we are working such that,externally 
+    after the smart contract get deployed only owner have responsibility to alter the address. But it is also suspect the security 
+    of dapps then how it can be decentralised,So we have to take a look over the code such that owner itself in future doesn't have 
+    a backdoor to fraud the client.
+    
 ### Day 4 Learnings
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
