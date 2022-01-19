@@ -324,6 +324,13 @@ smart contract and all the other cool stuffs.
     
     We will adding two more feature which is level & readytime, declared in struct becuase now we know why!!!
     
+  CHAPTER 5: Time Units
+   
+    In this Chapter we are implementing the cooldown time for zombie to make our game more intereseting. So every time if zombie feed or 
+    attack he has to wait for some time which is here called as cooldown time, we are going to implement using now keyword which the unix timestamp
+    according to that we will be going to update the createzombie function also, we will push in the zombie array two new feature which is 
+    level and cooldowntime.
+    
     
 ### Day 4 Learnings
 
