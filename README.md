@@ -2,7 +2,7 @@
 
 ### Day 1 Learnings
 
-1. Making the Zombie Factory
+Making the Zombie Factory
 I get to know that, Solidity which is a language for writing Smart Contracts.A contract is the fundamental building block of Ethereum applications.
 All solidity source code should start with a "version pragma" — a declaration of the version of the Solidity compiler this code should use. This is to prevent issues with future compiler versions potentially introducing changes that would break your code.It looks like this: pragma solidity >=0.5.0 <0.6.0;
 Solidity deals with variables and integers. for e.g: contract ZombieFactory { uint dnaDigits = 16 }
