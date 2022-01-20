@@ -41,7 +41,22 @@ Today I learned a bit more advanced stuffs on Solidity, here are the things I le
 
 ### Day 3 Learnings
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+![Learning Day 3](https://user-images.githubusercontent.com/85495019/150294623-a381242c-f2cf-4343-8fe7-3e78e7590db6.png)
+
+
+Completed Lesson 3
+
+Today I learned more advanced stuffs on Solidity, here are the things I learned
+
+* Immutability of contracts & External dependencies
+* Learned what are ownable contracts
+* Learned about OpenZeppelin's Solidity Library
+* What is gas , why is it necessary & structs packing to save gas
+* Timestamps
+* Why 'view' funstions don't cost gas
+* Learned why storage is expensive
+* For Loops
+
 
 ### Day 4 Learnings
 
