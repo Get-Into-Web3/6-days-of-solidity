@@ -380,11 +380,88 @@ smart contract and all the other cool stuffs.
   End.............................
     
     
-    
-    
-### Day 4 Learnings
+### Day 4 Zombie Battle System
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+In this Module we will be Implementing the battle System of Zombies
+
+  CHAPTER 1: Payable
+    
+    To Call a function it require some fee, so now we are going to implement that fee part in our game too, without that it
+    will not be different application than normal application in market.
+    
+    Normal API don't send money in their function call but it happen in ethereum or say blockchain world.
+    
+    Points to Note:
+    1) We will check first whether the fee that is sent is sufficient enough to call the function or not.
+    2) The function who transact will have the keyword payable otherwise, it won't be able to carry the process forward,it will reject.
+    3) msg.value will hold the fee of user while calling the function.
+    
+    We are adding the feature to level up the zombies by paying fee, this how we monitized from game
+    
+ CHAPTER 2: Withdraw
+    
+    Now, we are going to implemnt the feature that extract the ether from contract address to whomsoever I want.
+    
+    Point to note:
+    -> We are making one function that will set the fee in future as well beacuse of price of Ether is booming, so 0.001 will be much
+       expensive in future.
+    -> We add the whole code of withdraw.
+      
+ CHAPTER 3 & 4: Zombie Battles & Random Numbers
+   
+    Creating new file and contract for zombie Attack which is inherr=iting the property of ZombieHelper contract. 
+    
+    In Solidity random number generation is actuualy a very hard task, we are just use keccak256() hash function for
+    practical, but in real life it is harder to thought such a randomNumber that can't be break by thousands of nodes that are compete
+    to solve the block.
+      
+   
+ CHAPTER 5: Zombie Fightin'
+ 
+    Our zombie battles will work as follows:
+
+    -> You choose one of your zombies, and choose an opponent's zombie to attack.
+    -> If you're the attacking zombie, you will have a 70% chance of winning. The defending zombie will have a 30% chance of winning.
+    -> All zombies (attacking and defending) will have a winCount and a lossCount that will increment depending on the outcome of the battle.
+    -> If the attacking zombie wins, it levels up and spawns a new zombie.
+    -> If it loses, nothing happens (except its lossCount incrementing).
+    -> Whether it wins or loses, the attacking zombie's cooldown time will be triggered.
+    
+    This will be the whole architecture of our zombie battle.
+    
+
+CHAPTER 6,7,8: Refactoring Common Logic, Back to Attack!
+        
+        We are removing the redunndacy from our code by using modifiers. which is to check everytime the owner address.
+        We just make the function that will predict the outcomes of battle.
+        
+   
+CHAPTER 9: Zombie Wins and Losses
+      
+      We will be going to add the functionality of leaderboard game whic tell how much game won or loss. Implementing in our 
+      struct data type for simplicity.
+      
+      Adding two variables of uint16 
+      -> winCount
+      -> lossCount
+ 
+CHAPTER 10 & 11: Zombie Victory, Zombie Failure
+
+       If winCount is less than attackVictoryProbability = 70,then it wins.
+       -> increase the level of Zombie.
+       -> increase the lossCount of enemy
+       -> Increase the winCount.
+       
+       The loser:
+       -> Increase the  enemy winCount.
+       -> Increase the lossCount.
+       -> Call the triggerCooldown function , so it will rest for some time till next battle.
+   
+   
+
+END.....................................................
+
+
 
 ### Day 5 Learnings
 
