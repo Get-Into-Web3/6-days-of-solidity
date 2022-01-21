@@ -331,6 +331,34 @@ smart contract and all the other cool stuffs.
     according to that we will be going to update the createzombie function also, we will push in the zombie array two new feature which is 
     level and cooldowntime.
     
+  CHAPTER 6 & 7: Zombie Cooldowns,Public Functions & Security
+    
+    In this chapter we are making two function which will take care of zombie cooldown. We are calculating readyTime in function triggerCooldown 
+    after that, we are checking that readytime, it return true when it is less than the value now or false otherwise. 
+    Then, we change the public to internal scope due to security reason in function feedAndMultiply.
+    Then call the function triggerCooldown and isReady to set as require.
+    
+  CHAPTER 8 & 9: More on Function Modifiers,Zombie Modifiers
+    
+    We are going to make our own modifier to set level for game, so that in each level new abilities would come play into game.
+    We can pass argument into modifiersa and call them in another functions argument.
+    
+    Point to remeber:
+    At last line add _; in code so that it will call the rest of the function.
+    
+    Now, we will be adding some functionalities for user so, that if they level up their zombie they get some kind of reward or advantage.
+    1) For level2 or above they can change their name.
+    2) Level 20 above, they can customised the dna of Zombies.
+    
+    Important:
+    calldata: It is similar to memory but is used only in case of external function.
+    
+    Then, Simply make two function and using modifier abovelevel we set the abilities that user can do at certain level which is 2 and 20 in this case.
+    
+    
+    
+    
+    
     
 ### Day 4 Learnings
 
