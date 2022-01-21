@@ -354,8 +354,30 @@ smart contract and all the other cool stuffs.
     calldata: It is similar to memory but is used only in case of external function.
     
     Then, Simply make two function and using modifier abovelevel we set the abilities that user can do at certain level which is 2 and 20 in this case.
+  
+  CHAPTER 10: Saving Gas With 'View' Functions
+  
+    At last we have to see that how many zombies that user have in his/her account. We are going to
+    implement that function here to view the zombie Army.
+    
+    Important:
+    1.) One User calls the View function then, it doesn't cost any gas fee, because it is not manipulating blockchain.
+    2.) But, if we call internally then definitely it will cost the gas fee.So view functions are only free when they're called externally.
+    
+  CHAPTER 11 & 12: Storage is Expensive, For Loops
+  
+    Storage in blockchain is really expensive. So to avoid that we are using the memeory with array because it is the only option
+    to reduce the cost, because everytime we call the function and if it is storage then it will be huge ammount to be paid as fee.
+    
+    Point to Note:
+    -> Memory array have fixed size rather than storage array.
+    
+    We are using for loop to iterate over all the zombies that user have. It is Simple for loop which tracks the count of zombie
+    and at every index we are putting the zombie count;
     
     
+    
+  End.............................
     
     
     
