@@ -1,10 +1,10 @@
 # 6 Days of Solidity
 
-## ```Day 1 Learnings```
+## `Day 1 Learnings`
 
-### ```Contract```
+### `Contract`
 
-Contract is like class in C++. It encapsulates the solidity code like functions, variables, structs.
+`Contract` is like class in C++. It encapsulates the solidity code like `functions, variables, structs`.
 
 ```solidity
 contract HelloWeb3{
@@ -12,9 +12,10 @@ contract HelloWeb3{
 }
 ```
 
-### Version pragma
+### Version `pragma`
 
 Solidity code starts with version pragma which defines the version of compiler the solidity code should use
+
 It does not change the version of compiler but it checks whether the code written matches the rules of the version specified.
 
 ```solidity
@@ -41,32 +42,35 @@ Variables are considered as columns we store in db.
 
 ### Variable types:
 
-```State variables```: Exist in contract storage. 
+`State variables` : Exist in contract storage. 
 
-```Local variables```: Exist only within the function
+`Local variables` : Exist only within the function
 
-```Global variables```: Exist in global workspace and provide information about the blockchain and transaction properties.
+`Global variables` : Exist in global workspace and provide information about the blockchain and transaction properties.
 
 
-### ```uint``` - unsigned integer
+### `uint` - unsigned integer
 
-by default ```uint = uint256``` (256 bit unsigned integer)
+by default `uint = uint256` (256 bit unsigned integer)
 
-```uint``` can have less sizes like ```uint8, uint16, uint32```...
+`uint` can have less sizes like `uint8, uint16, uint32`...
 
 ### Math Operations
 
-Math operations in ```solidity``` are same as most of the programming languages
+Math operations in `solidity` are same as most of the programming languages
 
+```solidity
 Addtion x + y
 Subtraction  x - y
 Multiplication x * y
 Division x / y
 Exponential/ Power of : x ** y
+```
 
 ### ```Structs```
 
 Structure is data type which can hold different data types together
+
 Sometimes we need more complex data structures like struct
 
 ```solidity
@@ -85,10 +89,12 @@ struct Web3Struct{
 
 Collection of homogeneous data types is arrays
 
-Fixed arrays : type arrayName [ arraySize ];
-Dynamic arrays : Dynamic memory arrays are created using new keyword.
+`Fixed arrays` : type arrayName [ arraySize ];
+`Dynamic arrays` : Dynamic memory arrays are created using new keyword.
+```solidity
 uint size = 3;
 uint balance[] = new uint[](size);
+```
 
 ### Function Declarations
 
@@ -108,9 +114,11 @@ Parameters are passed in two ways
 ### Working With Structs and Arrays
 
 Struct is collection of heterogeneous data types
+
 Arrays are collection of homogeneous data types
 
 struct keyword is used for declaring struct
+
 arrays can be declared using []
 
 Lets create struct Student 
@@ -205,6 +213,7 @@ To pass parameter to ```keccak256``` pack the parameter into bytes
 ### Typecasting
 
 Converting between data types
+
 You can't perform operation on two different data types one from them need to typecast in order to get the result.
 ```solidity
 uint8 a = 5;
@@ -294,6 +303,7 @@ address addr = msg.sender;
 ### Require
 
 In simple language you can compare require with if statement i.e. require requires certain conditions to be satisfied then only executes next lines.
+
 Else throws error and won't execute further.
 
 ```solidity
@@ -479,9 +489,12 @@ uint c;
 ### Time Units
 
 Solidity provides some native units for dealing with time.
+
 The variable now will return the current unix timestamp of the latest block (the number of seconds that have passed since January 1st 1970). The unix time as I write this is 1642329321.
 
-Unix time is traditionally stored in a 32-bit number. This will lead to the "Year 2038" problem, when 32-bit unix timestamps will overflow and break a lot of legacy systems. So if we wanted our DApp to keep running 20 years from now, we could use a 64-bit number instead — but our users would have to spend more gas to use our DApp in the meantime.
+Unix time is traditionally stored in a 32-bit number. This will lead to the "Year 2038" problem, when 32-bit unix timestamps will overflow and break a lot of legacy systems. 
+
+So if we wanted our DApp to keep running 20 years from now, we could use a 64-bit number instead — but our users would have to spend more gas to use our DApp in the meantime.
 
 ### Passing structs as arguments
 
@@ -515,10 +528,13 @@ This is because view functions don't actually change anything on the blockchain 
 
 ### Storage is Expensive
 
-One of the more expensive operations in Solidity is using storage
+One of the more expensive operations in `Solidity` is using `storage`
+
 This is because every time you write or change a piece of data, it’s written permanently to the blockchain. Forever! Thousands of nodes across the world need to store that data on their hard drives, and this amount of data keeps growing over time as the blockchain grows. So there's a cost to doing that.
 
-In order to keep costs down, you want to avoid writing data to storage except when absolutely necessary. Sometimes this involves seemingly inefficient programming logic — like rebuilding an array in memory every time a function is called instead of simply saving that array in a variable for quick lookups.
+In order to keep costs down, you want to `avoid writing data to storage except when absolutely necessary`. 
+
+Sometimes this involves seemingly inefficient programming logic — like rebuilding an array in memory every time a function is called instead of simply saving that array in a variable for quick lookups.
 
 ### For Loops
 
@@ -596,13 +612,13 @@ note: steps 2 & 3 should be performed locally, in secret
 ### Tokens on Ethereum
 A token on Ethereum is basically just a smart contract that follows some common rules — namely it implements a standard set of functions that all other token contracts share
 
-ERC20 - Ethereum Request for Comment 20
+`ERC20 - Ethereum Request for Comment 20`
 Since all ERC20 tokens share the same set of functions with the same names, they can all be interacted with in the same ways.
 
-An ERC20 token contract keeps track of fungible tokens: any one token is exactly equal to any other token; no tokens have special rights or behavior associated with them. This makes ERC20 tokens useful for things like a medium of exchange currency, voting rights, staking, and more.
+An ERC20 token contract keeps track of `fungible tokens`: any one token is exactly equal to any other token; no tokens have special rights or behavior associated with them. This makes ERC20 tokens useful for things like a medium of exchange currency, voting rights, staking, and more.
 
 ### ERC721 Standard, Multiple Inheritance
-You can make a fungible token using ERC20, but what if not all tokens are alike? This comes up in situations like real estate or collectibles, where some items are valued more than others, due to their usefulness, rarity, etc. ERC721 is a standard for representing ownership of non-fungible tokens, that is, where each token is unique.
+You can make a fungible token using ERC20, but what if not all tokens are alike? This comes up in situations like real estate or collectibles, where some items are valued more than others, due to their usefulness, rarity, etc. ERC721 is a standard for representing ownership of `non-fungible` tokens, that is, where each token is unique.
 
 ERC721 is a more complex standard than ERC20, with multiple optional extensions, and is split across a number of contracts.
 
@@ -618,12 +634,9 @@ contract ERC721 {
 }
 ```
 
-Multiple Inheritance:
-    ContractA 	 ContractB
-	|	     |
-	-------------
-	      |
-	  ContractC
+### Multiple Inheritance:
+
+    Multiple contracts are used by the contract.
 
 ```solidity
 contract C is A, B{
@@ -660,6 +673,7 @@ and
 function approve(address _approved, uint256 _tokenId) external payable;
 ```
 the token's owner first calls approve with the address he wants to transfer to, and the _tokenID . 
+
 The contract then stores who is approved to take a token, usually in a mapping (uint256 => address). Then, when the owner or the approved address calls transferFrom, the contract checks if that msg.sender is the owner or is approved by the owner to take the token, and if so it transfers the token to him.
 
 
@@ -762,8 +776,11 @@ ABI stands for Application Binary Interface. Basically it's a representation of 
 When you compile your contract to deploy to Ethereum, the Solidity compiler will give you the ABI, so you'll need to copy and save this in addition to the contract address.
 
 ### Calling Contract Functions
+
 Web3.js has two methods we will use to call functions on our contract: call and send.
+
 call is used for view and pure functions. It only runs on the local node, and won't create a transaction on the blockchain.
+
 send will create a transaction and change data on the blockchain. You'll need to use send for any functions that aren't view or pure.
 
 MetaMask allows the user to manage multiple accounts in their extension.
