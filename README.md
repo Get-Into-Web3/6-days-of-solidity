@@ -567,7 +567,6 @@ In this Module we will be going to add feature of Collectibles like NFT , in whi
     
     In this way will be replacing all increment and decremnt operation with add() and sub() function.
   
-
   CHAPTER 11 & 12: SafeMath Part 3,SafeMath Part 4
   
   
@@ -579,6 +578,5 @@ In this Module we will be going to add feature of Collectibles like NFT , in whi
   END.................................................................
 
 
-### Day 6 Learnings
+### Day 6 App Front-ends & Web3.js
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
