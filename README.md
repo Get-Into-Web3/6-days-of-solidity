@@ -524,10 +524,12 @@ In this Module we will be going to add feature of Collectibles like NFT , in whi
       
     -> Now we will be going to make sure that only owner/approved address could transfer so now to check owner it is simple. for approved address
        we have to make mapping of uint to address which will take care of approval address if any of two will be true will call the transfer function.
-    
-  
-  
-  
+       
+    -> We will be filling out the approval mapping that we created. We will first chcek in approved method that it have modifier onyOwnerOf, so that 
+       only owner can call this approved method, after that simply insert the address of approved owner.
+       
+    -> At last throw emit Approved so that it can reflect into frontend as well.
+
   
   CHAPTER 9: Preventing Overflows
   
