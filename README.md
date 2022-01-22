@@ -191,26 +191,29 @@ little different.
        In this we learnt about addresses and Mapping in Blockchain.
 
        Address: It is like the bank account number everyone have a bank account they do transaction to this.
-                Simlilarly here to , the owner have its own address through which transaction can be done and uniquely identifies
-                the person.
+                Simlilarly here to , the owner have its own address through which transaction can be done and uniquely 
+                identifies the person.
 
-                For example: If you ever send crypto to any blockchain wallet, there you see the address which is used for transaction.
+                For example: If you ever send crypto to any blockchain wallet, there you see the address which is used 
+                for transaction.
 
-       Mapping: In Simple terms if you ever used any Programming language like Java,Phython there you seen something called Hashmap
-                or Dictionary. Here to in Solidity we have Mapping which is almost same, Key Value Pair where Key will be always unique.
+       Mapping: In Simple terms if you ever used any Programming language like Java,Phython there you seen something 
+                called Hashmap or Dictionary. Here to in Solidity we have Mapping which is almost same, Key Value Pair 
+                where Key will be always unique.
 
-       We are using Mapping In our project to store the address of owner with some value to it which will be the ZombieID.Let's see.
+       We are using Mapping In our project to store the address of owner with some value to it which will be the ZombieID.
 
    CHAPTER 3: Msg.sender  
 
-       To find out the owner address we generally use msg.sender variable which global variable in Solidity which gives the current
-       owner address. With the use of msg.sender as a key in our mapping which tell us the address of owner and value will be ZombieID,
-       it tell us who own the zombie.
+       To find out the owner address we generally use msg.sender variable which global variable in Solidity which gives 
+       the current owner address. With the use of msg.sender as a key in our mapping which tell us the address of owner 
+       and value will be ZombieID,it tell us who own that zombie.
 
    CHAPTER 4: Require
 
        Require is quite useful for verifying certain conditions that must be true before running a function.
-       We will be using the require to check whether the current user not gnereate unlimited zombie so, it will stop that thing.
+       We will be using the require to check whether the current user not gnereate unlimited zombie so, it will stop that 
+       thing.
 
        We will check if the current User count of Zombie will be zero then allow to generate army.
 
@@ -221,9 +224,9 @@ little different.
 
        It is basically Objected Oriented Programming Feature.
 
-       We will be making another contract which will be take all the information about Zombie feeding.Now after making that contract.
-       We have to use the property of our earlier contract which is ZombieFactory. So, to use that will use import keyword in our 
-       child contract.
+       We will be making another contract which will be take all the information about Zombie feeding.Now after making that 
+       contract.We have to use the property of our earlier contract which is ZombieFactory. So, to use that will use import 
+       keyword in our child contract.
 
        Similar to importing Modules in python.Think in this way.
     
@@ -236,7 +239,8 @@ little different.
     
   CHAPTER 8: Zombie DNA
     
-    The formula for calculating a new zombie's DNA is simple: the average between the feeding zombie's DNA and the target's DNA.
+    The formula for calculating a new zombie's DNA is simple: the average between the feeding zombie's DNA and the 
+    target's DNA.
     
     Using thsi we will Calculate:
     uint newZombieDna = (zombieDna + targetDna) / 2;
@@ -288,31 +292,35 @@ smart contract and all the other cool stuffs.
   CHAPTER 1: Immutability of Contracts
     
     We have heard lot about security in blockchain so how it looks.
-    -> First, thing if we deployed the smart contract in blockchain then it can't be further modified it will set once for all.
-    -> So,If you find the bug in your contract after you had deployed, then you have to write new smart contract by fixing that 
-       issue and deployed it again, in this way it become immutable and more secure than any other API or CODE.
+    -> First, thing if we deployed the smart contract in blockchain then it can't be further modified it will 
+       set once for all.
+    -> So,If you find the bug in your contract after you had deployed, then you have to write new smart contract 
+       by fixing that issue and deployed it again, in this way it become immutable and more secure than any other 
+       API or CODE.
     
     What is our Concern in this Project?
     
-    We had hardcoded the address of kittysmart Contract so we have to take care for future option what if their address get corrupted,
-    or give any other faults later on we will not be able to solve that issue once we deployed the contract, so we will use the function to 
-    write the address instead of hardcoding it.
+    We had hardcoded the address of kittysmart Contract so we have to take care for future option what if their 
+    address get corrupted,or give any other faults later on we will not be able to solve that issue once we deployed 
+    the contract, so we will use the function to write the address instead of hardcoding it.
     
   CHAPTER 2 & 3: Ownable Contracts , onlyOwner Function Modifier
   
-    In Chapter-1 we have created the function which is external so anybody can alter the address other than the original owner.
-    So we have to prevent that issue. To do that we will be using OpenZeppelin's Ownable contract in our dapp.
+    In Chapter-1 we have created the function which is external so anybody can alter the address other than the 
+    original owner.So we have to prevent that issue. To do that we will be using OpenZeppelin's Ownable contract 
+    in our dapp.
     
-    In Chapter 3, we are just adding onlyOwner modifier after external keyword in function that we are working such that,externally 
-    after the smart contract get deployed only owner have responsibility to alter the address. But it is also suspect the security 
-    of dapps then how it can be decentralised,So we have to take a look over the code such that owner itself in future doesn't have 
-    a backdoor to fraud the client.
+    In Chapter 3, we are just adding onlyOwner modifier after external keyword in function that we are working 
+    such that,externally after the smart contract get deployed only owner have responsibility to alter the address. 
+    But it is also suspect the security of dapps then how it can be decentralised,So we have to take a look over the 
+    code such that owner itself in future doesn't have a backdoor to trick the client.
     
   CHAPTER 4: Gas
     
-    Gas is basically a fee which is taken by ethereum to run the computation of your smart contract.So, every time a user call the 
-    function it have to paid that amount, also it is not fixed depends upon the number of operation as well as storage. So, it will be 
-    very necessarily to make code optimization at gret levl, beacuse it' all money that will go.
+    Gas is basically a fee which is taken by ethereum to run the computation of your smart contract.So, every time a 
+    user call the function it have to paid that amount, also it is not fixed depends upon the number of operation as 
+    well as storage. So, it will be  very necessarily to make code optimization at gret levl, beacuse it' all money 
+    that will go.
     
     To minimze the gas fee little bit use struct for variables to declared,also in clustered manner.
     
@@ -337,9 +345,9 @@ smart contract and all the other cool stuffs.
     
   CHAPTER 6 & 7: Zombie Cooldowns,Public Functions & Security
     
-    In this chapter we are making two function which will take care of zombie cooldown. We are calculating readyTime in function 
-    triggerCooldown after that, we are checking that readytime, it return true when it is less than the value now or false otherwise. 
-    Then, we change the public to internal scope due to security reason in function feedAndMultiply.
+    In this chapter we are making two function which will take care of zombie cooldown. We are calculating readyTime 
+    in function triggerCooldown after that, we are checking that readytime, it return true when it is less than the value 
+    now or false otherwise. Then, we change the public to internal scope due to security reason in function feedAndMultiply.
     Then call the function triggerCooldown and isReady to set as require.
     
   CHAPTER 8 & 9: More on Function Modifiers,Zombie Modifiers
@@ -510,14 +518,17 @@ and family member too.
   
     Ready to implement the methods of ERC721 start with.
     
-    balanceof -> This function take argument as an address of User and return how many tokens it possess, in our case token implies Zombies.
-    owner of -> It takes argument as token Id and return the address of owner who have that token. In our case token Id implies to Zombie ID.
+    balanceof -> This function take argument as an address of User and return how many tokens it possess, in our case token 
+                 implies Zombies.
+                 
+    owner of -> It takes argument as token Id and return the address of owner who have that token. In our case token Id implies 
+                to Zombie ID.
 
   CHAPTER 4: Refactoring
   
-    We have change the modifier na ownerOf in contract Zombiefeeding.sol because it will cause error if we use ownerOf method of ERC721.
-    To avoid that we have to change our implmentation part, beacise ERC721 have standard practice they dont't care about our 
-    internal implmentation. We can't change them.
+    We have change the modifier na ownerOf in contract Zombiefeeding.sol because it will cause error if we use ownerOf method 
+    of ERC721.To avoid that we have to change our implmentation part, beacise ERC721 have standard practice they dont't care about 
+    our internal implmentation. We can't change them.
 
   CHAPTER 5 , 6 , 7 & 8: ERC721: Transfer Logic,ERC721: Transfer Cont'd , ERC721: Approve
   
@@ -546,8 +557,8 @@ and family member too.
   
   CHAPTER 9: Preventing Overflows
   
-    We have implemnted the Transfer Logic but we have to prevent some corner cases as well, So that User accidentally not able to transfer the tokens.
-    For eg. address like 0 which is also called buring address.
+    We have implemnted the Transfer Logic but we have to prevent some corner cases as well, So that User accidentally not able 
+    to transfer the tokens. For eg. address like 0 which is also called buring address.
     
     So to avoid that.
     
