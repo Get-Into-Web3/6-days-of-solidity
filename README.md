@@ -533,13 +533,41 @@ In this Module we will be going to add feature of Collectibles like NFT , in whi
   
   CHAPTER 9: Preventing Overflows
   
-  
+    We have implemnted the Transfer Logic but we have to prevent some corner cases as well, So that User accidentally not able to transfer the tokens.
+    For eg. address like 0 which is also called buring address.
+    
+    So to avoid that.
+    
+    Overflow-> Suppose we have (uint8) data type which store  8 bit only in binary 11111111,in decimal 2^8 -1 =255.
+               For Example: uint8 num = 255;
+                            num++;
+                            
+                            It will print 0, because it overflow the data type value.
+                            
+    Underflow-> Works in similar manner suppose we have uint8 which is unsigned Integer it means that it cannot be negative.
+               For Example: uint8 num = 0;
+                            num--;
+                            
+                            It will Print 0 Cause Underflow error beacuse it must be positive.
+    
+    We are using uint256 which is much have biggest data tyoe value. 2^256 -1.
+    
+    Solution: To use Library called safeMath from OpenZeppelin it will take care of all Overflows and Underflows or many faults.
+    
+    Library is just a smart Contract through which we can take help. 
+    Example to use library " using SafeMath for uint256".
   
   
   CHAPTER 10: SafeMath Part 2
+    
+    To Implement we use Librray keyword that gives the featire of using statement.
+    Also it usses assert keyword to prevent ups and down.
+    Assert is similar to require instead ,require efund the gas if the function fails.
+    But assert will not refund so try to use require, only use assert when somenthing is extremely fishy.
+    
+    In this way will be replacing all increment and decremnt operation with add() and sub() function.
   
-  
-  
+
   CHAPTER 11 & 12: SafeMath Part 3,SafeMath Part 4
   
   
