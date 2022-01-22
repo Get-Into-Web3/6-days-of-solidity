@@ -1,68 +1,62 @@
 # 6 Days of Solidity
 
-### Day 1 Learnings
+## Day 1 Learnings
 
-### Lesson 1
-
-### Chapter 1 Overview
-
-#### We are going to build one database having all Indian Startups
-
-#### We will have function to add new startup
-
-#### Each startup will have attributes like Founder and Revenue
-
-
-##### Chapter 2 Contract
-
-Contract
+### ```Contract```
 
 Contract is like class in C++. It encapsulates the solidity code like functions, variables, structs.
 
+```solidity
 contract HelloWeb3{
 	
 }
+```
 
-Version pragma
+### Version pragma
 
 Solidity code starts with version pragma which defines the version of compiler the solidity code should use
 It does not change the version of compiler but it checks whether the code written matches the rules of the version specified.
 
-syntax
-
+```solidity
 pragma solidity >=0.6.5;
+```
 
 the above statement will ensure that the code will compile in any version of compiler starting from 0.6.5
 
+```solidity
 pragma solidity <0.7.0;
+```
 
 the above statement will ensure that the code will compile in any version of compiler below 0.7.0;
 
+```solidity
 pragma solidity ^0.6.5;
+```
 
 the above statement will ensure that the code will compile in any version of compiler from 0.6.5 to 0.7.0, i.e. will not work from 0.7.0
 
-##### Chapter 3 State Variables and Integers
+### State Variables and Integers
 
 Variables are considered as columns we store in db. 
 
-###### Variable types:
+### Variable types:
 
-State variables: Exist in contract storage. 
+```State variables```: Exist in contract storage. 
 
-Local variables: Exist only within the function
+```Local variables```: Exist only within the function
 
-Global variables: Exist in global workspace and provide information about the blockchain and transaction properties.
+```Global variables```: Exist in global workspace and provide information about the blockchain and transaction properties.
 
-uint - unsigned integer
 
-by default uint = uint256 (256 bit unsigned integer)
+### ```uint``` - unsigned integer
 
-uint can have less sizes like uint8, uint16, uint32...
+by default ```uint = uint256``` (256 bit unsigned integer)
 
-##### Chapter 4 Math Operations
+```uint``` can have less sizes like ```uint8, uint16, uint32```...
 
-Math operations in solidity are same as most of the programming languages
+### Math Operations
+
+Math operations in ```solidity``` are same as most of the programming languages
 
 Addtion x + y
 Subtraction  x - y
@@ -70,21 +64,24 @@ Multiplication x * y
 Division x / y
 Exponential/ Power of : x ** y
 
-##### Chapter 5 Structs
+### ```Structs```
 
 Structure is data type which can hold different data types together
 Sometimes we need more complex data structures like struct
 
+```solidity
 struct StructName{
 	
 }
-
+```
+```solidity
 struct Web3Struct{
 	uint age;
 	string str;
 }
+```
 
-##### Chapter 6 Arrays
+### Arrays
 
 Collection of homogeneous data types is arrays
 
@@ -93,21 +90,22 @@ Dynamic arrays : Dynamic memory arrays are created using new keyword.
 uint size = 3;
 uint balance[] = new uint[](size);
 
-##### Chapter 7 Function Declarations
+### Function Declarations
 
 functions are series of actions grouped together for reuse
 
 functions in solidity are declared using function keyword
-
+```solidity
 function funcName( datatype _para, datatype _para1){
 }
+```
 Its convention to start parameters names with _
 
 Parameters are passed in two ways
-1) By value : New copy of variable is created for a function
-2) By reference : Reference to original variable is passed as parameter
+1) By ```value``` : New copy of variable is created for a function
+2) By ```reference``` : Reference to original variable is passed as parameter
 
-##### Chapter 8 Working With Structs and Arrays
+### Working With Structs and Arrays
 
 Struct is collection of heterogeneous data types
 Arrays are collection of homogeneous data types
@@ -116,91 +114,110 @@ struct keyword is used for declaring struct
 arrays can be declared using []
 
 Lets create struct Student 
+```solidity
 struct Student{
 	string memory name;
 	uint id;
 }
-
+```
 Now we have to create array of Students
 
+```solidity
 Student[] students;
+```
 
 Lets add some values to students array
-
+```solidity
 function addStudent( string memory _name, uint _id ) public{
 	students.push( Student(name, id));		//push struct to students array
 }
+```
 
-
-##### Chapter 9 Private / Public Functions
+### Private / Public Functions
 
 Access specifiers in Solidity
 
-Public : funtions can be accessible outside the contract also 
+```Public``` : funtions can be accessible outside the contract also 
 
-Private : functions are accessible within the contract only
+```Private``` : functions are accessible within the contract only
 
 
 public function
+```solidity
 function funcName( datatype1 _name1, datatype2 _name2) public{
 	
 }
+```
 private function
+
+```solidity
 function _funcName( datatype1 _name1, datatype2 _name2) private{
 	
 }
+```
 
-##### Chapter 10 : More on Functions
+### More on Functions
 
-Return values
+```Return values```
 
 Need return and returns keyword
 
+```solidity
 function funcName( datatype1 _name1 ) public returns ( datatype1 ){
 	return name2;
 }
+```
 
-Function Modifiers
+### Function Modifiers
 
 How we access the data of the contract defines different function modifiers
 
-view : only viewing data and not modifying data
+```view``` : only viewing data and not modifying data
 
+```solidity
 function funcName() public view returns(datatype1) {
 	return(name1);
 }
-pure : doesn't even accessing any data
+```
+```pure``` : doesn't even accessing any data
 
+```solidity
 function funcName( datatype1 _name1, datatype1 _name2 ) private pure returns( datatype1 )  {
 	return name1 + name2;
 }
+```
+### Keccak256 and Typecasting
 
-##### Chapter 11: Keccak256 and Typecasting
-
-###### Keccak256
+### ```Keccak256```
 
 Ethereum has the hash function keccak256 built in, which is a version of SHA3. A hash function basically maps an input into a random 256-bit hexadecimal number. A slight change in the input will cause a large change in the hash.
 
 Syntax
+ ```solidity
  keccak256(bytes)
+ ```
 
-To pass parameter to keccak256 pack the parameter into bytes
+To pass parameter to ```keccak256``` pack the parameter into bytes
+ ```solidity
  abi.encodePacked(param)
+ ```
 
-###### Typecasting
+### Typecasting
 
 Converting between data types
 You can't perform operation on two different data types one from them need to typecast in order to get the result.
-
+```solidity
 uint8 a = 5;
 uint b = 6;
 // throws an error because a * b returns a uint, not uint8:
 uint8 c = a * b;
 // we have to typecast b as a uint8 to make it work:
 uint8 c = a * uint8(b);
+```
 
-##### Chapter 12 Putting It Together
+### Putting It Together
 
+```solidity
 pragma solidity ^0.7.5;
 contract StartUps{
 	struct Company{
@@ -217,11 +234,13 @@ contract StartUps{
 		return companies[_id];
 	}
 }
+```
 
-##### Chapter 13: Events
+### Events
 
 Events are a way for your contract to communicate that something happened on the blockchain to your app front-end, which can be 'listening' for certain events and take action when they happen.
 
+```solidity
 // declare the event
 // whenever emited this event in frontend you can handle this
 event IntegersAdded(uint x, uint y, uint result);
@@ -238,10 +257,11 @@ function add(uint _x, uint _y) public returns (uint) {
 YourContract.IntegersAdded(function(error, result) {
   // do something with result
 })
+```
 
-##### Chapter 14: Web3.js
+### Web3.js
 
-For communicating with the contract Ethereum has JavaScript Library web3.js.
+For communicating with the contract Ethereum has JavaScript Library ```web3.js```.
 
 
 ### Day 2 Learnings
