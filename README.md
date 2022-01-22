@@ -465,21 +465,57 @@ END.....................................................
 
 ### Day 5 ERC721 & Crypto-Collectibles
 
-  CHAPTER 1:
-  
-  CHAPTER 2:
-  
-  
-  CHAPTER 3:
+In this Module we will be going to add feature of Collectibles like NFT , in which you can give your zombies to your friend and family member too.
+
+  CHAPTER 1: Tokens on Ethereum
   
   
-  CHAPTER 4:
   
   
-  CHAPTER 5:
+  CHAPTER 2: ERC721 Standard, Multiple Inheritance
   
   
-  CHAPTER 6:
+  
+  
+  
+  CHAPTER 3: balanceOf & ownerOf
+  
+  
+  
+  
+  
+  CHAPTER 4: Refactoring
+  
+  
+  
+  
+  
+  CHAPTER 5 , 6 , 7 & 8: ERC721: Transfer Logic,ERC721: Transfer Cont'd , ERC721: Approve
+  
+  
+  
+  
+  
+  
+  
+  CHAPTER 9: Preventing Overflows
+  
+  
+  
+  
+  CHAPTER 10: SafeMath Part 2
+  
+  
+  
+  CHAPTER 11 & 12: SafeMath Part 3,SafeMath Part 4
+  
+  
+  
+  
+  CHAPTER 13: Comments
+  
+  
+  END.................................................................
 
 
 ### Day 6 Learnings
