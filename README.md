@@ -613,31 +613,105 @@ and family member too.
 ### Day 6 App Front-ends & Web3.js
 
   CHAPTER 1: Intro to Web3.js
-  
-  
+    
+        Web3js -> It is a javascript Library, which helps us to talk with blockchain network.
+        
+        Ethereum Network is made up of Nodes and every node have a copy of Blockchain.So, we have to always query to 
+        tell the node which function I want to call with which parameter.
+        Nodes only Undersand the JSON RPC Language so Web3 js play a role as mediator to interact with the Nodes.
+        
+        So we will be including the web3.js in our index.html to use it.
+                 
   CHAPTER 2: Web3 Providers
-  
+        
+        Web3 Providers: It help us to identify which Node will be going to handle our code.Beacuse All nodes share a common data.
+        
+        We will be Using Infura it is freely available. It will handle all reads and write to the Ethereum Network.
+        Now, again if user will read/write on blockchain then it require public/private key of User. To handle that we will be using
+        Metamask ,it is a browser Extension.
+        
+        Now we will check if the user have metamask template code.
   
   CHAPTER 3: Talking to Contracts
   
-  
+        Now, we have Metamask and web3 in our code. We need to talk to contract to that we need.
+        
+        1) Contract address -> After Deploying the Contract in Ethereum we will get the fixed Contract Address.
+        2) ABI (Application Binary Interface)-> It will just convert all the code of contract into JSON format.
+           So that Web3.js understand what is the flow of code.
+   
   CHAPTER 4: Calling Contract Functions
-  
-  
+        
+        Web3js provide two function to call function in our Contract.
+        
+        Call -> First of all,it doesn't cost any fee because it is used only on pure and view function.
+                They don't modify the blochain at all.
+        Send -> It cost to use and change the blockchain data also it will use on rest of the function other than
+                pure and view function.
   
   CHAPTER 5: Metamask & Accounts
   
+        Now we want our app frontend to show the whole zombie Army, bUt our function ZombiesToOwner need an address
+        of owner. So to do that we will be using the Metamask boilerplate code to acquire the current user address who is using the
+        App.
+  
   
   CHAPTER 6: Displaying our Zombie Army
-  
+        
+        In this Chapter we learnt , how we gonna display the parse object data into frontend which we got from our code.
+        It's all about frontend part.
+        
+        Zombie Sprites:
+        Link: https://github.com/loomnetwork/zombie-char-component/blob/master/ZombieChar.vue
+        
   
   CHAPTER 7: Sending Transactions
   
-  
+        There are a few major differences from call functions:
+
+        Sending a transaction requires a from address of who's calling the function (which becomes msg.sender in your Solidity code). 
+        We'll want this to be the user of our DApp,so MetaMask will pop up to prompt them to sign the transaction.
+
+        Sending a transaction costs gas
+
+        There will be a significant delay from when the user sends a transaction and when that transaction actually takes effect 
+        on the blockchain.
+        
+        Thus we'll need logic in our app to handle the asynchronous nature
+        
+        Our function sends a transaction to our Web3 provider, and chains some event listeners:
+
+        - receipt will fire when the transaction is included into a block on Ethereum, which means our zombie has been created 
+          and saved on our contract
+        - error will fire if there's an issue that prevented the transaction from being included in a block, such as the user not 
+          sending enough gas. We'll want to inform the user in our UI that the transaction didn't go through so they can try again.
   
   CHAPTER 8: Calling Payable Functions
   
-  
+       Function that requires special treatment in Web3.js — payable functions.
+       The way to send Ether along with a function is simple, with one caveat: we need to specify how much to send in wei, not Ether.
+       A wei is the smallest sub-unit of Ether — there are 10^18 wei in one ether.
+       
+       In our DApp, we set levelUpFee = 0.001 ether, so when we call our levelUp function, we can make the user send 0.001 Ether 
   
   CHAPTER 9: Subscribing to Events
+  
+       In Web3.js, you can subscribe to an event so your web3 provider triggers some logic in your code every time it fires:
+       Note that this would trigger an alert every time ANY zombie was created in our DApp — not just for the current user.
+       
+       What if we only wanted alerts for the current user?
+       
+       Using indexed:
+       In order to filter events and only listen for changes related to the current user, our Solidity contract would have to 
+       use the indexed keyword, like we did in the Transfer event of our ERC721 implementation.
+       
+       Using events and indexed fields can be quite a useful practice for listening to changes to your contract and 
+       reflecting them in your app's front-end.
+       
+       Querying past events:
+       We can even query past events using getPastEvents, and use the filters fromBlock and toBlock to give Solidity 
+       a time range for the event logs.
+       
+       
+ End.........................................................................................................................................
 
