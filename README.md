@@ -717,5 +717,6 @@ and family member too.
  
  Quite Exciting Journey It was along with practical implmentation maintaining document is just give me such a nice Experienece.
  Looking forward to learn More Thank You Loom Network also Pushpit and your team for such a nice content to start of with
- Ethereum Contract.Again Thanks a lot man.
+ Ethereum Contract.
+ Again Thanks a lot man.
 
