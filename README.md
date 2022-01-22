@@ -175,7 +175,8 @@ In NutShell it's all about the basics of whole solidity programming language and
 
 ### Day 2 Zombies Attack Their Victims
 
-In this Module we are going to add Multiplayer feature as well as adding some extra feature to make our Zombie army appearnace little different.
+In this Module we are going to add Multiplayer feature as well as adding some extra feature to make our Zombie army appearnace
+little different.
 
    CHAPTER 1: Lesson 2 Overview:
 
@@ -190,19 +191,21 @@ In this Module we are going to add Multiplayer feature as well as adding some ex
        In this we learnt about addresses and Mapping in Blockchain.
 
        Address: It is like the bank account number everyone have a bank account they do transaction to this.
-                Simlilarly here to , the owner have its own address through which transaction can be done and uniquely identifies the person.
+                Simlilarly here to , the owner have its own address through which transaction can be done and uniquely identifies
+                the person.
 
                 For example: If you ever send crypto to any blockchain wallet, there you see the address which is used for transaction.
 
-       Mapping: In Simple terms if you ever used any Programming language like Java,Phython there you seen something called Hashmap or Dictionary.
-                Here to in Solidity we have Mapping which is almost same, Key Value Pair where Key will be always unique.
+       Mapping: In Simple terms if you ever used any Programming language like Java,Phython there you seen something called Hashmap
+                or Dictionary. Here to in Solidity we have Mapping which is almost same, Key Value Pair where Key will be always unique.
 
        We are using Mapping In our project to store the address of owner with some value to it which will be the ZombieID.Let's see.
 
    CHAPTER 3: Msg.sender  
 
-       To find out the owner address we generally use msg.sender variable which global variable in Solidity which gives the current owner address.
-       With the use of msg.sender as a key in our mapping which tell us the address of owner and value will be ZombieID ,it tell us who own the zombie.
+       To find out the owner address we generally use msg.sender variable which global variable in Solidity which gives the current
+       owner address. With the use of msg.sender as a key in our mapping which tell us the address of owner and value will be ZombieID,
+       it tell us who own the zombie.
 
    CHAPTER 4: Require
 
@@ -218,8 +221,9 @@ In this Module we are going to add Multiplayer feature as well as adding some ex
 
        It is basically Objected Oriented Programming Feature.
 
-       We will be making another contract which will be take all the information about Zombie feeding.Now after making that contract
-       We have to use the property of our earlier contract which is ZombieFactory. So, to use that will use import keyword in our child contract.
+       We will be making another contract which will be take all the information about Zombie feeding.Now after making that contract.
+       We have to use the property of our earlier contract which is ZombieFactory. So, to use that will use import keyword in our 
+       child contract.
 
        Similar to importing Modules in python.Think in this way.
     
@@ -333,8 +337,8 @@ smart contract and all the other cool stuffs.
     
   CHAPTER 6 & 7: Zombie Cooldowns,Public Functions & Security
     
-    In this chapter we are making two function which will take care of zombie cooldown. We are calculating readyTime in function triggerCooldown 
-    after that, we are checking that readytime, it return true when it is less than the value now or false otherwise. 
+    In this chapter we are making two function which will take care of zombie cooldown. We are calculating readyTime in function 
+    triggerCooldown after that, we are checking that readytime, it return true when it is less than the value now or false otherwise. 
     Then, we change the public to internal scope due to security reason in function feedAndMultiply.
     Then call the function triggerCooldown and isReady to set as require.
     
@@ -346,7 +350,8 @@ smart contract and all the other cool stuffs.
     Point to remeber:
     At last line add _; in code so that it will call the rest of the function.
     
-    Now, we will be adding some functionalities for user so, that if they level up their zombie they get some kind of reward or advantage.
+    Now, we will be adding some functionalities for user so, that if they level up their zombie they get some kind of 
+    reward or advantage.
     1) For level2 or above they can change their name.
     2) Level 20 above, they can customised the dna of Zombies.
     
@@ -363,7 +368,8 @@ smart contract and all the other cool stuffs.
     
     Important:
     1.) One User calls the View function then, it doesn't cost any gas fee, because it is not manipulating blockchain.
-    2.) But, if we call internally then definitely it will cost the gas fee.So view functions are only free when they're called externally.
+    2.) But, if we call internally then definitely it will cost the gas fee.So view functions are only free when they're 
+        called externally.
     
   CHAPTER 11 & 12: Storage is Expensive, For Loops
   
@@ -422,8 +428,10 @@ In this Module we will be Implementing the battle System of Zombies
     Our zombie battles will work as follows:
 
     -> You choose one of your zombies, and choose an opponent's zombie to attack.
-    -> If you're the attacking zombie, you will have a 70% chance of winning. The defending zombie will have a 30% chance of winning.
-    -> All zombies (attacking and defending) will have a winCount and a lossCount that will increment depending on the outcome of the battle.
+    -> If you're the attacking zombie, you will have a 70% chance of winning. The defending zombie will have a 
+       30% chance of winning.
+    -> All zombies (attacking and defending) will have a winCount and a lossCount that will increment depending on the 
+       outcome of the battle.
     -> If the attacking zombie wins, it levels up and spawns a new zombie.
     -> If it loses, nothing happens (except its lossCount incrementing).
     -> Whether it wins or loses, the attacking zombie's cooldown time will be triggered.
