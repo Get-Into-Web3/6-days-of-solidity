@@ -468,32 +468,63 @@ END.....................................................
 In this Module we will be going to add feature of Collectibles like NFT , in which you can give your zombies to your friend and family member too.
 
   CHAPTER 1: Tokens on Ethereum
-  
-  
-  
+    
+    Tokens : In Ethereum it a smart Contract that follows set of rules, so that it can interact with other token in same manner.
+    It uses mapping to know which address have how much token in it.
+    
+    ERC20 token V/S ERC721 token
+    
+    ERC20 token are divisible token which means any part of 1 token can be used.
+    They will be more useful in dealing witch Currency.
+    They Can be interchange with the other token, such as Exchange Companies do like Binance, WazirX,etc.
+    
+    Example: 1 Bitcon,0.00000010 btc ,0.0000010 all possible 
+    
+    ERC721 aren't divisible that we want this feature to implement in our game.
+    Also they aren't interchangeble,It will be unique and non-divisible.
+    Using ERC721 we don't need to implement auction or escrow logic.
+    
   
   CHAPTER 2: ERC721 Standard, Multiple Inheritance
   
-  
-  
-  
+    We will be implementing some Standard ERC721 methods.
+    
+    How to inherit Multiple contract.
+    We can do that simply by just using the comma.
+    Example :
+        contract A is B,C;
+        
+    Now we will just import the erc721 contract into our contract file and we will be implmenting the methods one by one. 
   
   CHAPTER 3: balanceOf & ownerOf
   
-  
-  
-  
-  
+    Ready to implement the methods of ERC721 start with.
+    
+    balanceof -> This function take argument as an address of User and return how many tokens it possess, in our case token implies Zombies.
+    owner of -> It takes argument as token Id and return the address of owner who have that token. In our case token Id implies to Zombie ID.
+
   CHAPTER 4: Refactoring
   
-  
-  
-  
-  
+    We have change the modifier na ownerOf in contract Zombiefeeding.sol because it will cause error if we use ownerOf method of ERC721.
+    To avoid that we have to change our implmentation part, beacise ERC721 have standard practice they dont't care about our our internal implmentation.
+    We cann't change them.
+
   CHAPTER 5 , 6 , 7 & 8: ERC721: Transfer Logic,ERC721: Transfer Cont'd , ERC721: Approve
   
-  
-  
+    Transfer Logic:
+    
+      First way to do that is using transferFrom() function it will take three argument which is address of sender , address of recipient 
+      and token ID what you want to send. This function will call by tokenOwner.
+      
+      Second way is to implement the approve() function followed by transferFrom() function. tranferFrom() will be same as it is.
+      In approve() function it will ask for two argument which is recipient address and tokenID he wants to send then the owner will call
+      transferFrom() function.
+      
+      Now will just tranfer the zombie to recipent address and change the owner address associated with _to address which is again recipient address.
+      
+    -> Now we will be going to make sure that only owner/approved address could transfer so now to check owner it is simple. for approved address
+       we have to make mapping of uint to address which will take care of approval address if any of two will be true will call the transfer function.
+    
   
   
   
