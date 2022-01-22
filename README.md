@@ -557,7 +557,7 @@ We have seen the visibility modifiers before in this challenge
 `public, external, internal, private`
 
 ### State Modifiers : which tell us how the function interacts with the BlockChain
-||Read from Blockchain|Write to Blockchain|Fees required when called from Internal funtion|Called from External function|
+||Read from Blockchain|Write to Blockchain|Fees required when called from Internal function|Fees required when Called from External function|
 |------|--------|---------|--------|---------|
 |view|Yes|No|Yes|No|
 |pure|No|No|Yes|No|
