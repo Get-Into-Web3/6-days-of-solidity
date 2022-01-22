@@ -78,6 +78,8 @@ Here are the things I learned today :
 ![Learning Day 5](https://user-images.githubusercontent.com/85495019/150633671-a069796f-d845-4182-8115-d8f81d8a87cc.png)
 
 
+Completed Lesson 5
+
 Today I learned about Tokens on ethereum , here are the things I learned :
 
 * What is ERC20 & ERC721 Token
