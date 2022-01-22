@@ -92,4 +92,18 @@ Today I learned about Tokens on ethereum , here are the things I learned :
 
 ### Day 6 Learnings
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+![Learning Day 6](https://user-images.githubusercontent.com/85495019/150633914-e97c0708-c066-4c35-8a45-f84b9dc861ff.png)
+
+
+Cpmpleted 6
+
+Today I learned about web3.js & how to interact with the front-end, here are the things I learned :
+
+* What is we3.js
+* Infura & metamask
+* What is ABI
+* 'call' & 'send' functions on web3.js
+* How to send transactions
+* What is wei
+* Indexed
+
