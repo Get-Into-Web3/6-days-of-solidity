@@ -326,10 +326,10 @@ smart contract and all the other cool stuffs.
     
   CHAPTER 5: Time Units
    
-    In this Chapter we are implementing the cooldown time for zombie to make our game more intereseting. So every time if zombie feed or 
-    attack he has to wait for some time which is here called as cooldown time, we are going to implement using now keyword which the unix timestamp
-    according to that we will be going to update the createzombie function also, we will push in the zombie array two new feature which is 
-    level and cooldowntime.
+    In this Chapter we are implementing the cooldown time for zombie to make our game more intereseting. So every time 
+    if zombie feed or attack he has to wait for some time which is here called as cooldown time, we are going to implement 
+    using now keyword which the unix timestamp according to that we will be going to update the createzombie function 
+    also, we will push in the zombie array two new feature which is level and cooldowntime.
     
   CHAPTER 6 & 7: Zombie Cooldowns,Public Functions & Security
     
@@ -353,7 +353,8 @@ smart contract and all the other cool stuffs.
     Important:
     calldata: It is similar to memory but is used only in case of external function.
     
-    Then, Simply make two function and using modifier abovelevel we set the abilities that user can do at certain level which is 2 and 20 in this case.
+    Then, Simply make two function and using modifier abovelevel we set the abilities that user can do at certain level 
+    which is 2 and 20 in this case.
   
   CHAPTER 10: Saving Gas With 'View' Functions
   
@@ -465,7 +466,8 @@ END.....................................................
 
 ### Day 5 ERC721 & Crypto-Collectibles
 
-In this Module we will be going to add feature of Collectibles like NFT , in which you can give your zombies to your friend and family member too.
+In this Module we will be going to add feature of Collectibles like NFT , in which you can give your zombies to your friend 
+and family member too.
 
   CHAPTER 1: Tokens on Ethereum
     
@@ -506,27 +508,30 @@ In this Module we will be going to add feature of Collectibles like NFT , in whi
   CHAPTER 4: Refactoring
   
     We have change the modifier na ownerOf in contract Zombiefeeding.sol because it will cause error if we use ownerOf method of ERC721.
-    To avoid that we have to change our implmentation part, beacise ERC721 have standard practice they dont't care about our our internal implmentation.
-    We cann't change them.
+    To avoid that we have to change our implmentation part, beacise ERC721 have standard practice they dont't care about our 
+    internal implmentation. We can't change them.
 
   CHAPTER 5 , 6 , 7 & 8: ERC721: Transfer Logic,ERC721: Transfer Cont'd , ERC721: Approve
   
     Transfer Logic:
     
-      First way to do that is using transferFrom() function it will take three argument which is address of sender , address of recipient 
-      and token ID what you want to send. This function will call by tokenOwner.
+      First way to do that is using transferFrom() function it will take three argument which is address of sender , address 
+      of recipient and token ID what you want to send. This function will call by tokenOwner.
       
-      Second way is to implement the approve() function followed by transferFrom() function. tranferFrom() will be same as it is.
-      In approve() function it will ask for two argument which is recipient address and tokenID he wants to send then the owner will call
-      transferFrom() function.
+      - Second way is to implement the approve() function followed by transferFrom() function. tranferFrom() will be same as it is.
+      - In approve() function it will ask for two argument which is recipient address and tokenID he wants to send then the
+        owner will call transferFrom() function.
       
-      Now will just tranfer the zombie to recipent address and change the owner address associated with _to address which is again recipient address.
+      Now will just tranfer the zombie to recipent address and change the owner address associated with _to address 
+      which is again recipient address.
       
-    -> Now we will be going to make sure that only owner/approved address could transfer so now to check owner it is simple. for approved address
-       we have to make mapping of uint to address which will take care of approval address if any of two will be true will call the transfer function.
+    -> Now we will be going to make sure that only owner/approved address could transfer so now to check owner it 
+       is simple. for approved address we have to make mapping of uint to address which will take care of approval 
+       address if any of two will be true will call the transfer function.
        
-    -> We will be filling out the approval mapping that we created. We will first chcek in approved method that it have modifier onyOwnerOf, so that 
-       only owner can call this approved method, after that simply insert the address of approved owner.
+    -> We will be filling out the approval mapping that we created. We will first chcek in approved method that it 
+       have modifier onyOwnerOf, so that only owner can call this approved method, after that simply insert the address 
+       of approved owner.
        
     -> At last throw emit Approved so that it can reflect into frontend as well.
 
@@ -552,7 +557,8 @@ In this Module we will be going to add feature of Collectibles like NFT , in whi
     
     We are using uint256 which is much have biggest data tyoe value. 2^256 -1.
     
-    Solution: To use Library called safeMath from OpenZeppelin it will take care of all Overflows and Underflows or many faults.
+    Solution: To use Library called safeMath from OpenZeppelin it will take care of all Overflows and 
+              Underflows or many faults.
     
     Library is just a smart Contract through which we can take help. 
     Example to use library " using SafeMath for uint256".
@@ -568,12 +574,19 @@ In this Module we will be going to add feature of Collectibles like NFT , in whi
     In this way will be replacing all increment and decremnt operation with add() and sub() function.
   
   CHAPTER 11 & 12: SafeMath Part 3,SafeMath Part 4
-  
-  
-  
+    
+    We Use the library SafeMath for uint which uint256 to prevent from overflow and underflow.
+    But we also have uint16,uint32 data types so we have to make two mre safemath library for this data type as Well.
+    
+    Then We just replace all the increment and decrement operation with add() and sub() functions.  
   
   CHAPTER 13: Comments
   
+    In Programming Comments play an vital role.It Nourish the Code also make it more readable.
+    
+    Single Line Comment:->  We use two slash which is //
+    Multilen Comment:-> We use this /*   */
+     
   
   END.................................................................
 
