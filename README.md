@@ -62,6 +62,7 @@ Today I learned more advanced stuffs on Solidity, here are the things I learned 
 
 ![Learning Day 4](https://user-images.githubusercontent.com/85495019/150396869-8abfe31c-23bb-465b-a048-7865597b0f7d.png)
 
+
 Completed Lesson 4
 
 Here are the things I learned today :
@@ -74,7 +75,18 @@ Here are the things I learned today :
 
 ### Day 5 Learnings
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+![Learning Day 5](https://user-images.githubusercontent.com/85495019/150633671-a069796f-d845-4182-8115-d8f81d8a87cc.png)
+
+
+Today I learned about Tokens on ethereum , here are the things I learned :
+
+* What is ERC20 & ERC721 Token
+* How to implement atoken contract
+* What is balanceOf & OwnerOf functions
+* Implementation logic of ERC721 token
+* What is overflow & underflow
+* Safemath Library
+
 
 ### Day 6 Learnings
 
