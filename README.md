@@ -580,3 +580,32 @@ In this Module we will be going to add feature of Collectibles like NFT , in whi
 
 ### Day 6 App Front-ends & Web3.js
 
+  CHAPTER 1: Intro to Web3.js
+  
+  
+  CHAPTER 2: Web3 Providers
+  
+  
+  CHAPTER 3: Talking to Contracts
+  
+  
+  CHAPTER 4: Calling Contract Functions
+  
+  
+  
+  CHAPTER 5: Metamask & Accounts
+  
+  
+  CHAPTER 6: Displaying our Zombie Army
+  
+  
+  CHAPTER 7: Sending Transactions
+  
+  
+  
+  CHAPTER 8: Calling Payable Functions
+  
+  
+  
+  CHAPTER 9: Subscribing to Events
+
