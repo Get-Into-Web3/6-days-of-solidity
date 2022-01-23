@@ -19,11 +19,11 @@
     5.4 Division: x/y
     5.5 Modulus: x%y
     5.6 Exponent: x = y**z (where, x = y to the power z)
-6. Then I got to know the “struct” data type. In simpler terms I would say it is a custom data type that is created by the user. It can be declared by struct keyword. Eg:  struct Student{ uint age; string name; }
+6. Then I got to know the “struct” data type. In simpler terms I would say it is a custom data type that is created by the user. It can be declared by struct keyword. Eg:        struct Student{ uint age; string name; }
 7. In this module, I learned to make an array of structs. Eg- Student[] public students (array of struct ‘Student’ named students.
 8. Functions in solidity: 
     8.1 Syntax-  function printName(uint _sno, string _name) public{ }
-    8.2 Here function is the keyword to declare a function, printName is the function name, takes in 2 parameters (_sno and _name) and public is the keyword, that allows anyone to call the function and body goes in the {}
+    8.2 Here function is the keyword to declare a function, printName is the function name, takes in 2 parameters (_sno and _name) and public is the keyword, that allows             anyone to call the function and body goes in the {}
     8.3 ‘memory’ keyword is used to specify that function variable be stored in memory
     8.4 2 ways to pass an argument in a function:
         8.4.1 By value: original value remains unaffected
