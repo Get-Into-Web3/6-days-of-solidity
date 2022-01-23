@@ -5,7 +5,9 @@
 1. Firstly, I got to know of the Smart Contracts, that form the fundamental building block of Ethereum Applications
 2. All solidity source code start with a “Version pragma” that declares the version of solidity compiler the code   should use
 3. State Variables:
+    
     3.1 Permanently stored in contract storage (permanently written to Ethereum blockchain)
+    
     3.2 Type we used on day 1:
         3.2.1 Unsigned integers (uint): non-negative integers
         3.2.2 string : used for UTF-8 data of arbitrary-length
