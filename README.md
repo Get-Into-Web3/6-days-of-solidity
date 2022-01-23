@@ -35,6 +35,7 @@
 13. Events: these let the smart contract interact with the app-frontend whenever something happens. We ‘emit’ a response to an event.
 
 
+
 ### Day 2 Zombie attack their victims
 
 1. In this lesson, I started with learning about mapping and addresses. Ethereum blockchain is made up of accounts  and each account has an 'address'. Mappings are another way to store data in a 'key-value' like way
@@ -49,6 +50,7 @@
 8. interfaces- that allows 2 contracts to interact with each other
 
 
+
 ### Day 3 Advanced Solidity Concepts
 
 1. In this lesson, we got to know that the smart contracts are immutable. Then we get to know of the OpenZeppelin library and the Ownable contact in it, onlyOwner Function of contract Ownable.
@@ -60,14 +62,30 @@
 7. another way to reduce gascost is to reduce storage usage and using variables as in memory, especially in external view functions.
 8. then i got to know of the for-loops in solidity, and they are same as in javascript.
 
+
+
 ### Day 4 Zombie Battle systems
 
 In this module, we get to know of payable modifier, that can recieve ether. Further we used keccak256 hash function to generate a random number, by passing in 3 arguments( now, msg.sender, and an incrementing value). The rest of the module was based on what we learned in prior modules and involved refactoring our code, making some modifiers where a same require statement was being used in many functions, implementing win and loss count for zombies and deciding winner of a zombie battle using an if statement.
 
-### Day 5 Learnings
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### Day 6 Learnings
+### Day 5 ERC721 & Crypto-Collectibles
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+1. In this I get to know of tokens that are the smart contracts with certain rules, and one such ERC20 token that we implemented in our code, ERC721 standard, logic behind the Transfer and approve functions in ERC721 standard.
+2. after that we refactor our code a little and learnt about libraries(a special type of smart contract). Indicated that we are using SafeMath library(an OpenZepplin library  that we used to prevent underflows and overflows in our code) in our code.
+3. lastly I learnt about the comments in solidity: the single-line and multi-line comments and the natspec standard of commenting
+
+
+
+### Day 6 App frontends & Web3.js
+
+1. In this, i got to knew of the 'Web3.js' that is a javascript library for frontent made by ethereum foundation. Then i read about the web3 providers like INFURA; Metamask, that let users manage their ethereum accounts and private keys
+2. ABI ( Application Binary Interface): it is a representation of our contract's methods in JSON format and tells web3.js to format function calls in such a way that can be understood by the contract.
+3. next modules of the lesson included doing things using jquery, like displaying the zombies army on user screen, sending transactions and modifying the contents of screen
+4. got to know of wei that is the smallest unit of ether(1 ether = 10^18 wei)
+5. Finally we again used JQuery to subscribe to the events that take place
+
+
+##THIS WAS MY HAPPY LEARNING JOURNEY OF 6 DAYS OF SOLIDITY :-)
+
